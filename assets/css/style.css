@@ -1074,6 +1074,17 @@ textarea {
   opacity: 1;
   visibility: visible;
 }
+.date-picker.open .calendar .close-calender {
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  background: #1592a5;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+}
 .date-picker .ui-datepicker-inline {
   position: relative;
   width: 100%;
