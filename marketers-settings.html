@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tri Kart</title>
+    <meta name="description" content="">
+
+    <!-- Tab Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/icon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/icon.ico">
+
+    <!-- Genereal CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+
+    <!-- Side Menu -->
+    <div class="side-menu">
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo/icon.png" alt="لوحة التحكم">
+        </a>
+        <!-- ./Logo -->
+
+        <!-- Main Menu -->
+        <ul class="main-menu">
+            <li class="active">
+                <a href="index.html">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>لوحة التحكم</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-link="settings">
+                    <i class="fas fa-cogs"></i>
+                    <span>الإعدادات</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-link="catalogue">
+                    <i class="fas fa-book-open"></i>
+                    <span>كاتلوج</span>
+                </a>
+            </li>
+            <li>
+                <a data-link="sales">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>المبيعات</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-link="customers">
+                    <i class="fas fa-users"></i>
+                    <span>العملاء</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-link="vendors">
+                    <i class="fas fa-people-carry"></i>
+                    <span>التجار</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-link="marketings">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>المسوقين</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-power-off"></i>
+                    <span>تسجيل الخروج</span>
+                </a>
+            </li>
+        </ul>
+        <!-- ./Main Menu -->
+
+    </div>
+    <!-- ./Side Menu -->
+
+    <!-- Sub Menus -->
+
+    <div class="sub-main-menu" data-link="settings">
+        <h3>الإعدادات</h3>
+        <span class="close-btn">&times;</span>
+        <div class="row">
+            <div class="col">
+                <h4 class="list-title">إعدادات الموقع</h4>
+                <ul>
+                    <li>
+                        <a href="website-settings.html" class="done">
+                            إعدادات الموقع
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            واجهة الموقع
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shipping-settings.html" class="done">
+                            إعدادات الشحن
+                        </a>
+                    </li>
+                    <li>
+                        <a href="users-settings.html" class="done">
+                            إعدادات المستخدمين
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vendors-settings.html" class="done">
+                            إعدادات التجار
+                        </a>
+                    </li>
+                    <li>
+                        <a href="payment-settings.html" class="done">
+                            إعدادات الدفع
+                        </a>
+                    </li>
+                    <li>
+                        <a href="marketers-settings.html" class="done">
+                            إعدادات المسوقين
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="list-title">إعدادات الصفحات</h4>
+                <ul>
+                    <li>
+                        <a href="product-settings.html" class="done">
+                            إعدادات صفحة المنتجات
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search-settings.html" class="done">
+                            إعدادات صفحة البحث
+                        </a>
+                    </li>
+                </ul>
+                <h4 class="list-title">كوبونات</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            إنشاء كوبون جديد
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            كوبونات مفعلة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            كوبونات تم استخدامها
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- ./Settings Menu -->
+
+    <div class="sub-main-menu" data-link="catalogue">
+        <h3>كاتلوج</h3>
+        <span class="close-btn">&times;</span>
+        <div class="row">
+            <div class="col">
+                <h4 class="list-title">المنتجات</h4>
+                <ul>
+                    <li>
+                        <a href="add-product.html" class="done">
+                            إضافة منتج
+                        </a>
+                    </li>
+                    <li>
+                        <a href="edit-product.html" class="done">
+                            تحرير منتج
+                        </a>
+                    </li>
+                    <li>
+                        <a href="freez-product.html" class="done">
+                            منتجات مجمدة
+                        </a>
+                    </li>
+                </ul>
+                <h4 class="list-title">قوائم جانبية</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            إضافة قوائم جديدة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تحرير القوائم
+                        </a>
+                    </li>
+                </ul>
+                <h4 class="list-title">قوائم كاملة</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            إضافة قسم جديد
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تحرير القوائم
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="list-title">سطر القوائم</h4>
+                <ul>
+                    <li>
+                        <a href="add-line-list.html" class="done">
+                            إضافة قسم جديد
+                        </a>
+                    </li>
+                    <li>
+                        <a href="edit-line-list.html" class="done">
+                            تحرير القوائم
+                        </a>
+                    </li>
+                </ul>
+                <h4 class="list-title">قوائم أيقونية</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            إضافة قسم جديد
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تحرير القوائم
+                        </a>
+                    </li>
+                </ul>
+                <h4 class="list-title">قوائم الحساب</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            إضافة قسم جديد
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تحرير القوائم
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="list-title">الأقسام</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            إضافة قسم جديد
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تحرير الأقسام
+                        </a>
+                    </li>
+                </ul>
+                <h4 class="list-title">البراندات</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            إضافة براند جديد
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تحرير البراندات
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- ./Catalogue Menu -->
+
+    <div class="sub-main-menu" data-link="sales">
+        <h3>المبيعات</h3>
+        <span class="close-btn">&times;</span>
+        <div class="row">
+            <div class="col">
+                <h4 class="list-title">الطلبات</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            طلبات جديدة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات مستلمة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات قيد الشحن
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات تم تسليمها
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات مجمدة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات مسترجعة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات ملغية
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="list-title">فواتير العملاء</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            إنشاء فاتورة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            فواتير مدفوعة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            فواتير بانتظار الدفع
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            فواتير مجمدة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            فواتير مرفوضة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            فواتير مسترجعة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            فواتير بانتظار الشحن
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            فواتير قيد الشحن
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            فواتير تم تسليمها
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- ./Sales Menu -->
+
+    <div class="sub-main-menu" data-link="vendors">
+        <h3>التجار</h3>
+        <span class="close-btn">&times;</span>
+        <div class="row">
+            <div class="col">
+                <h4 class="list-title">حسابات التجار</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            تجار مفعلين
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تجار بانتظار التفعيل
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تجار مرفوضين
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تجار مجمدين
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تجار محظورين
+                        </a>
+                    </li>
+                </ul>
+                <h4 class="list-title">كوبونات التجار</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            كوبونات مفعلة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            كوبونات منتهية
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="list-title">طلبات التجار</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            طلبات جديدة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات مستلمة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات قيد الشحن
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات تم تسليمها
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات مجمدة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات مسترجعة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات ملغية
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="list-title">منتجات التجار</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            منتجات مفعلة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            منتجات بانتظار الموافقة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            منتجات محظورة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="freez-product.html" class="done">
+                            منتجات مجمدة
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- ./Vendors Menu -->
+
+    <div class="sub-main-menu" data-link="customers">
+        <h3>العملاء</h3>
+        <span class="close-btn">&times;</span>
+        <div class="row">
+            <div class="col">
+                <h4 class="list-title">حسابات العملاء</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            عملاء مفعلين
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            عملاء مجمدين
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            عملاء محظورين
+                        </a>
+                    </li>
+                </ul>
+                <h4 class="list-title">كوبونات العملاء</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            كوبونات مفعلة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            كوبونات منتهية
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--
+            <div class="col">
+                <h4 class="list-title">طلبات العملاء</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            طلبات جديدة  
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات مستلمة 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                           طلبات قيد الشحن
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات تم تسليمها
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات مجمدة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات مسترجعة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات ملغية
+                        </a>
+                    </li> 
+                </ul>
+            </div> -->
+        </div>
+    </div><!-- ./Customers Menu -->
+
+    <div class="sub-main-menu" data-link="marketings">
+        <h3>المسوقين</h3>
+        <span class="close-btn">&times;</span>
+        <div class="row">
+            <div class="col">
+                <h4 class="list-title">حسابات المسوقين</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            مسوقين مفعلين
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            مسوقين بانتظار التفعيل
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            مسوقين مرفوضين
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            مسوقين مجمدين
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            مسوقين محظورين
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="list-title">الأرباح</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            أرباح المسوقين
+                        </a>
+                    </li>
+                </ul>
+                <h4 class="list-title">التكلفة</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            تكلفة المسوقين
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- ./Marketings Menu -->
+
+    <!-- ./Sub Menus -->
+
+
+    <!-- Page Body -->
+    <div class="page-body">
+
+        <!-- Top Menu -->
+        <div class="top-main-menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a>
+                        <i class="fas fa-user-alt"></i>
+                        مدير الموقع
+                        <span class="arrow">
+                            <i class="fas fa-caret-down"></i>
+                        </span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">حسابي</a>
+                        </li>
+                        <li>
+                            <a href="#">تسجيل الخروج</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- ./Top Menu -->
+
+
+        <!-- ###### Marketers Settings ###### -->
+        <h3 class="main-section-title">
+            إعدادات المسوقين
+        </h3>
+
+        <form action="#" method="POST">
+
+            <!-- General Settings -->
+            <div class="row">
+
+                <div class="col-3">
+                    <div class="setting-box">
+                        <p>إيقاف تشغيل دخول المسوقين</p>
+                        <div class="yes-no-btn">
+                            <input type="checkbox" class="checkbox" checked>
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="setting-box">
+                        <p>إيقاف تشغيل تسجيل المسوقين</p>
+                        <div class="yes-no-btn">
+                            <input type="checkbox" class="checkbox" checked>
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="setting-box">
+                        <p>إيقاف تشغيل تفعيل اللينك</p>
+                        <div class="yes-no-btn">
+                            <input type="checkbox" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="setting-box">
+                        <p>إيقاف تشغيل تفعيل الكوبونات</p>
+                        <div class="yes-no-btn">
+                            <input type="checkbox" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ./General Settings -->
+
+            <button class="custom-save-btn" type="submit">
+                <i class="far fa-save"></i>
+                حفظ
+            </button>
+
+        </form>
+        <!-- ###### ./Marketers Settings ###### -->
+
+    </div>
+    <!-- ./Page Body -->
+
+
+    <!-- Genereal Js Files -->
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/all.js"></script>
+
+    <!-- Custom JS File -->
+    <script src="assets/js/plugin.js"></script>
+
+</body>
+
+</html>

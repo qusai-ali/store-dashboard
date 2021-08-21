@@ -1,0 +1,1292 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tri Kart</title>
+    <meta name="description" content="">
+
+    <!-- Tab Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/icon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/icon.ico">
+
+    <!-- Genereal CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+
+    <!-- Side Menu -->
+    <div class="side-menu">
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo/icon.png" alt="لوحة التحكم">
+        </a>
+        <!-- ./Logo -->
+
+        <!-- Main Menu -->
+        <ul class="main-menu">
+            <li class="active">
+                <a href="index.html">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>لوحة التحكم</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-link="settings">
+                    <i class="fas fa-cogs"></i>
+                    <span>الإعدادات</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-link="catalogue">
+                    <i class="fas fa-book-open"></i>
+                    <span>كاتلوج</span>
+                </a>
+            </li>
+            <li>
+                <a data-link="sales">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>المبيعات</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-link="customers">
+                    <i class="fas fa-users"></i>
+                    <span>العملاء</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-link="vendors">
+                    <i class="fas fa-people-carry"></i>
+                    <span>التجار</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-link="marketings">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>المسوقين</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-power-off"></i>
+                    <span>تسجيل الخروج</span>
+                </a>
+            </li>
+        </ul>
+        <!-- ./Main Menu -->
+
+    </div>
+    <!-- ./Side Menu -->
+
+    <!-- Sub Menus -->
+
+    <div class="sub-main-menu" data-link="settings">
+        <h3>الإعدادات</h3>
+        <span class="close-btn">&times;</span>
+        <div class="row">
+            <div class="col">
+                <h4 class="list-title">إعدادات الموقع</h4>
+                <ul>
+                    <li>
+                        <a href="website-settings.html" class="done">
+                            إعدادات الموقع
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            واجهة الموقع
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shipping-settings.html" class="done">
+                            إعدادات الشحن
+                        </a>
+                    </li>
+                    <li>
+                        <a href="users-settings.html" class="done">
+                            إعدادات المستخدمين
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vendors-settings.html" class="done">
+                            إعدادات التجار
+                        </a>
+                    </li>
+                    <li>
+                        <a href="payment-settings.html" class="done">
+                            إعدادات الدفع
+                        </a>
+                    </li>
+                    <li>
+                        <a href="marketers-settings.html" class="done">
+                            إعدادات المسوقين
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="list-title">إعدادات الصفحات</h4>
+                <ul>
+                    <li>
+                        <a href="product-settings.html" class="done">
+                            إعدادات صفحة المنتجات
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search-settings.html" class="done">
+                            إعدادات صفحة البحث
+                        </a>
+                    </li>
+                </ul>
+                <h4 class="list-title">كوبونات</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            إنشاء كوبون جديد
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            كوبونات مفعلة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            كوبونات تم استخدامها
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- ./Settings Menu -->
+
+    <div class="sub-main-menu" data-link="catalogue">
+        <h3>كاتلوج</h3>
+        <span class="close-btn">&times;</span>
+        <div class="row">
+            <div class="col">
+                <h4 class="list-title">المنتجات</h4>
+                <ul>
+                    <li>
+                        <a href="add-product.html" class="done">
+                            إضافة منتج
+                        </a>
+                    </li>
+                    <li>
+                        <a href="edit-product.html" class="done">
+                            تحرير منتج
+                        </a>
+                    </li>
+                    <li>
+                        <a href="freez-product.html" class="done">
+                            منتجات مجمدة
+                        </a>
+                    </li>
+                </ul>
+                <h4 class="list-title">قوائم جانبية</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            إضافة قوائم جديدة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تحرير القوائم
+                        </a>
+                    </li>
+                </ul>
+                <h4 class="list-title">قوائم كاملة</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            إضافة قسم جديد
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تحرير القوائم
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="list-title">سطر القوائم</h4>
+                <ul>
+                    <li>
+                        <a href="add-line-list.html" class="done">
+                            إضافة قسم جديد
+                        </a>
+                    </li>
+                    <li>
+                        <a href="edit-line-list.html" class="done">
+                            تحرير القوائم
+                        </a>
+                    </li>
+                </ul>
+                <h4 class="list-title">قوائم أيقونية</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            إضافة قسم جديد
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تحرير القوائم
+                        </a>
+                    </li>
+                </ul>
+                <h4 class="list-title">قوائم الحساب</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            إضافة قسم جديد
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تحرير القوائم
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="list-title">الأقسام</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            إضافة قسم جديد
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تحرير الأقسام
+                        </a>
+                    </li>
+                </ul>
+                <h4 class="list-title">البراندات</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            إضافة براند جديد
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تحرير البراندات
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- ./Catalogue Menu -->
+
+    <div class="sub-main-menu" data-link="sales">
+        <h3>المبيعات</h3>
+        <span class="close-btn">&times;</span>
+        <div class="row">
+            <div class="col">
+                <h4 class="list-title">الطلبات</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            طلبات جديدة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات مستلمة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات قيد الشحن
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات تم تسليمها
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات مجمدة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات مسترجعة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات ملغية
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="list-title">فواتير العملاء</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            إنشاء فاتورة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            فواتير مدفوعة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            فواتير بانتظار الدفع
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            فواتير مجمدة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            فواتير مرفوضة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            فواتير مسترجعة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            فواتير بانتظار الشحن
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            فواتير قيد الشحن
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            فواتير تم تسليمها
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- ./Sales Menu -->
+
+    <div class="sub-main-menu" data-link="vendors">
+        <h3>التجار</h3>
+        <span class="close-btn">&times;</span>
+        <div class="row">
+            <div class="col">
+                <h4 class="list-title">حسابات التجار</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            تجار مفعلين
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تجار بانتظار التفعيل
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تجار مرفوضين
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تجار مجمدين
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            تجار محظورين
+                        </a>
+                    </li>
+                </ul>
+                <h4 class="list-title">كوبونات التجار</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            كوبونات مفعلة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            كوبونات منتهية
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="list-title">طلبات التجار</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            طلبات جديدة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات مستلمة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات قيد الشحن
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات تم تسليمها
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات مجمدة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات مسترجعة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات ملغية
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="list-title">منتجات التجار</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            منتجات مفعلة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            منتجات بانتظار الموافقة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            منتجات محظورة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="freez-product.html" class="done">
+                            منتجات مجمدة
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- ./Vendors Menu -->
+
+    <div class="sub-main-menu" data-link="customers">
+        <h3>العملاء</h3>
+        <span class="close-btn">&times;</span>
+        <div class="row">
+            <div class="col">
+                <h4 class="list-title">حسابات العملاء</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            عملاء مفعلين
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            عملاء مجمدين
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            عملاء محظورين
+                        </a>
+                    </li>
+                </ul>
+                <h4 class="list-title">كوبونات العملاء</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            كوبونات مفعلة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            كوبونات منتهية
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--
+            <div class="col">
+                <h4 class="list-title">طلبات العملاء</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            طلبات جديدة  
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات مستلمة 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                           طلبات قيد الشحن
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات تم تسليمها
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات مجمدة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات مسترجعة
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            طلبات ملغية
+                        </a>
+                    </li> 
+                </ul>
+            </div> -->
+        </div>
+    </div><!-- ./Customers Menu -->
+
+    <div class="sub-main-menu" data-link="marketings">
+        <h3>المسوقين</h3>
+        <span class="close-btn">&times;</span>
+        <div class="row">
+            <div class="col">
+                <h4 class="list-title">حسابات المسوقين</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            مسوقين مفعلين
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            مسوقين بانتظار التفعيل
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            مسوقين مرفوضين
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            مسوقين مجمدين
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            مسوقين محظورين
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="list-title">الأرباح</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            أرباح المسوقين
+                        </a>
+                    </li>
+                </ul>
+                <h4 class="list-title">التكلفة</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            تكلفة المسوقين
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- ./Marketings Menu -->
+
+    <!-- ./Sub Menus -->
+
+
+    <!-- Page Body -->
+    <div class="page-body">
+
+        <!-- Top Menu -->
+        <div class="top-main-menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                </li>
+                <li class="sub-menu">
+                    <a>
+                        <i class="fas fa-user-alt"></i>
+                        مدير الموقع
+                        <span class="arrow">
+                            <i class="fas fa-caret-down"></i>
+                        </span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">حسابي</a>
+                        </li>
+                        <li>
+                            <a href="#">تسجيل الخروج</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- ./Top Menu -->
+
+
+        <!-- ###### Website Settings ###### -->
+        <h3 class="main-section-title">
+            إعدادات الموقع
+        </h3>
+
+        <form action="#" method="POST">
+
+            <!-- General Settings -->
+            <div class="row">
+
+                <div class="col-3">
+                    <div class="setting-box">
+                        <p>إيقاف الموقع بالكامل</p>
+                        <div class="yes-no-btn">
+                            <input type="checkbox" class="checkbox" checked>
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="setting-box">
+                        <p>إيقاف الموقع للصيانة</p>
+                        <div class="yes-no-btn">
+                            <input type="checkbox" class="checkbox" checked>
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="setting-box">
+                        <p>إيقاف الشراء</p>
+                        <div class="yes-no-btn">
+                            <input type="checkbox" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="setting-box">
+                        <p>إيقاف تسجيل الدخول للعملاء</p>
+                        <div class="yes-no-btn">
+                            <input type="checkbox" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="setting-box">
+                        <p>إيقاف فتح حساب للعملاء</p>
+                        <div class="yes-no-btn">
+                            <input type="checkbox" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="setting-box">
+                        <p>إيقاف شراء المنتجات الرقمية</p>
+                        <div class="yes-no-btn">
+                            <input type="checkbox" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="setting-box">
+                        <p>إيقاف إشعارات الطلبات عبر البريد</p>
+                        <div class="yes-no-btn">
+                            <input type="checkbox" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="setting-box">
+                        <p>إيقاف إشعارات الرسائل النصية</p>
+                        <div class="yes-no-btn">
+                            <input type="checkbox" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="setting-box">
+                        <p>إيقاف تشغيل التقييمات</p>
+                        <div class="yes-no-btn">
+                            <input type="checkbox" class="checkbox">
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="border-down">
+            <!-- ./General Settings -->
+
+            <!-- Countries which site work on or not -->
+            <h3 class="sub-main-title">تحديد البلدان التي يعمل بها الموقع:</h3>
+
+            <div class="select-country-box">
+
+                <!-- Selected Countries Box -->
+                <div class="selected-box">
+                    <ul>
+                        <li data-value="أفغانستان">أفغانستان<span>&times;</span></li>
+                        <li data-value="ألبانيا">ألبانيا<span>&times;</span></li>
+                        <li data-value="الجزائر">الجزائر<span>&times;</span></li>
+                        <li data-value="أندورا">أندورا<span>&times;</span></li>
+                        <li data-value="أنغولا">أنغولا<span>&times;</span></li>
+                        <li data-value="أنتيغوا وباربودا">أنتيغوا وباربودا<span>&times;</span></li>
+                        <li data-value="الأرجنتين">الأرجنتين<span>&times;</span></li>
+                        <li data-value="أرمينيا">أرمينيا<span>&times;</span></li>
+                        <li data-value="أستراليا">أستراليا<span>&times;</span></li>
+                        <li data-value="النمسا">النمسا<span>&times;</span></li>
+                        <li data-value="أذربيجان">أذربيجان<span>&times;</span></li>
+                        <li data-value="جزر البهاما">جزر البهاما<span>&times;</span></li>
+                        <li data-value="البحرين">البحرين<span>&times;</span></li>
+                        <li data-value="بنغلاديش">بنغلاديش<span>&times;</span></li>
+                        <li data-value="بربادوس">بربادوس<span>&times;</span></li>
+                        <li data-value="بيلاروسيا">بيلاروسيا<span>&times;</span></li>
+                        <li data-value="بلجيكا">بلجيكا<span>&times;</span></li>
+                        <li data-value="بليز">بليز<span>&times;</span></li>
+                        <li data-value="بنين">بنين<span>&times;</span></li>
+                        <li data-value="بوتان">بوتان<span>&times;</span></li>
+                        <li data-value="بوليفيا">بوليفيا<span>&times;</span></li>
+                        <li data-value="البوسنة والهرسك">البوسنة والهرسك<span>&times;</span></li>
+                        <li data-value="بوتسوانا">بوتسوانا<span>&times;</span></li>
+                        <li data-value="البرازيل">البرازيل<span>&times;</span></li>
+                        <li data-value="بروناي">بروناي<span>&times;</span></li>
+                        <li data-value="بلغاريا">بلغاريا<span>&times;</span></li>
+                        <li data-value="بوركينا فاسو">بوركينا فاسو<span>&times;</span></li>
+                        <li data-value="بوروندي">بوروندي<span>&times;</span></li>
+                        <li data-value="كمبوديا">كمبوديا<span>&times;</span></li>
+                        <li data-value="الكاميرون">الكاميرون<span>&times;</span></li>
+                        <li data-value="كندا">كندا<span>&times;</span></li>
+                        <li data-value="كابو فيردي">كابو فيردي<span>&times;</span></li>
+                        <li data-value="جمهورية افريقيا الوسطى">جمهورية افريقيا الوسطى<span>&times;</span></li>
+                        <li data-value="تشاد">تشاد<span>&times;</span></li>
+                        <li data-value="تشيلي">تشيلي<span>&times;</span></li>
+                        <li data-value="الصين">الصين<span>&times;</span></li>
+                        <li data-value="كولومبيا">كولومبيا<span>&times;</span></li>
+                        <li data-value="جزر القمر">جزر القمر<span>&times;</span></li>
+                        <li data-value="الكونغو">الكونغو<span>&times;</span></li>
+                        <li data-value="جزر كوك">جزر كوك<span>&times;</span></li>
+                        <li data-value="كوستا ريكا">كوستا ريكا<span>&times;</span></li>
+                        <li data-value="ساحل العاج">ساحل العاج<span>&times;</span></li>
+                        <li data-value="كرواتيا">كرواتيا<span>&times;</span></li>
+                        <li data-value="كوبا">كوبا<span>&times;</span></li>
+                        <li data-value="قبرص">قبرص<span>&times;</span></li>
+                        <li data-value="التشيك">التشيك<span>&times;</span></li>
+                        <li data-value="الدنمارك">الدنمارك<span>&times;</span></li>
+                        <li data-value="جيبوتي">جيبوتي<span>&times;</span></li>
+                        <li data-value="دومينيكا">دومينيكا<span>&times;</span></li>
+                        <li data-value="جمهورية الدومينيكان">جمهورية الدومينيكان<span>&times;</span></li>
+                        <li data-value="تيمور الشرقية">تيمور الشرقية<span>&times;</span></li>
+                        <li data-value="الاكوادور">الاكوادور<span>&times;</span></li>
+                        <li data-value="مصر">مصر<span>&times;</span></li>
+                        <li data-value="السلفادور">السلفادور<span>&times;</span></li>
+                        <li data-value="غينيا الإستوائية">غينيا الإستوائية<span>&times;</span></li>
+                        <li data-value="إريتريا">إريتريا<span>&times;</span></li>
+                        <li data-value="إستونيا">إستونيا<span>&times;</span></li>
+                        <li data-value="أثيوبيا">أثيوبيا<span>&times;</span></li>
+                        <li data-value="فيجي">فيجي<span>&times;</span></li>
+                        <li data-value="فنلندا">فنلندا<span>&times;</span></li>
+                        <li data-value="فرنسا">فرنسا<span>&times;</span></li>
+                        <li data-value="الجابون">الجابون<span>&times;</span></li>
+                        <li data-value="غامبيا">غامبيا<span>&times;</span></li>
+                        <li data-value="جورجيا">جورجيا<span>&times;</span></li>
+                        <li data-value="ألمانيا">ألمانيا<span>&times;</span></li>
+                        <li data-value="غانا">غانا<span>&times;</span></li>
+                        <li data-value="اليونان">اليونان<span>&times;</span></li>
+                        <li data-value="غرينادا">غرينادا<span>&times;</span></li>
+                        <li data-value="غواتيمالا">غواتيمالا<span>&times;</span></li>
+                        <li data-value="غينيا">غينيا<span>&times;</span></li>
+                        <li data-value="غيانا">غيانا<span>&times;</span></li>
+                        <li data-value="هايتي">هايتي<span>&times;</span></li>
+                        <li data-value="هندوراس">هندوراس<span>&times;</span></li>
+                        <li data-value="هونج كونج">هونج كونج<span>&times;</span></li>
+                        <li data-value="هنغاريا">هنغاريا<span>&times;</span></li>
+                        <li data-value="أيسلندا">أيسلندا<span>&times;</span></li>
+                        <li data-value="إندونيسيا">إندونيسيا<span>&times;</span></li>
+                        <li data-value="الهند">الهند<span>&times;</span></li>
+                        <li data-value="إيران">إيران<span>&times;</span></li>
+                        <li data-value="العراق">العراق<span>&times;</span></li>
+                        <li data-value="أيرلندا">أيرلندا<span>&times;</span></li>
+                        <li data-value="إيطاليا">إيطاليا<span>&times;</span></li>
+                        <li data-value="جامايكا">جامايكا<span>&times;</span></li>
+                        <li data-value="اليابان">اليابان<span>&times;</span></li>
+                        <li data-value="الأردن">الأردن<span>&times;</span></li>
+                        <li data-value="كازاخستان">كازاخستان<span>&times;</span></li>
+                        <li data-value="كينيا">كينيا<span>&times;</span></li>
+                        <li data-value="كيريباتي">كيريباتي<span>&times;</span></li>
+                        <li data-value="كوريا الشمالية">كوريا الشمالية<span>&times;</span></li>
+                        <li data-value="كوريا الجنوبية">كوريا الجنوبية<span>&times;</span></li>
+                        <li data-value="الكويت">الكويت<span>&times;</span></li>
+                        <li data-value="قيرغيزستان">قيرغيزستان<span>&times;</span></li>
+                        <li data-value="لاوس">لاوس<span>&times;</span></li>
+                        <li data-value="لاتفيا">لاتفيا<span>&times;</span></li>
+                        <li data-value="لبنان">لبنان<span>&times;</span></li>
+                        <li data-value="ليسوتو">ليسوتو<span>&times;</span></li>
+                        <li data-value="ليبيريا">ليبيريا<span>&times;</span></li>
+                        <li data-value="ليبيا">ليبيا<span>&times;</span></li>
+                        <li data-value="ليختنشتاين">ليختنشتاين<span>&times;</span></li>
+                        <li data-value="ليتوانيا">ليتوانيا<span>&times;</span></li>
+                        <li data-value="لوكسمبورغ">لوكسمبورغ<span>&times;</span></li>
+                        <li data-value="مدغشقر">مدغشقر<span>&times;</span></li>
+                        <li data-value="ماليزيا">ماليزيا<span>&times;</span></li>
+                        <li data-value="ملاوي">ملاوي<span>&times;</span></li>
+                        <li data-value="جزر المالديف">جزر المالديف<span>&times;</span></li>
+                        <li data-value="مالي">مالي<span>&times;</span></li>
+                        <li data-value="مالطا">مالطا<span>&times;</span></li>
+                        <li data-value="جزر مارشال">جزر مارشال<span>&times;</span></li>
+                        <li data-value="موريتانيا">موريتانيا<span>&times;</span></li>
+                        <li data-value="موريشيوس">موريشيوس<span>&times;</span></li>
+                        <li data-value="المكسيك">المكسيك<span>&times;</span></li>
+                        <li data-value="مولدوفا">مولدوفا<span>&times;</span></li>
+                        <li data-value="موناكو">موناكو<span>&times;</span></li>
+                        <li data-value="منغوليا">منغوليا<span>&times;</span></li>
+                        <li data-value="جمهورية الجبل الأسود">جمهورية الجبل الأسود<span>&times;</span></li>
+                        <li data-value="المغرب">المغرب<span>&times;</span></li>
+                        <li data-value="موزمبيق">موزمبيق<span>&times;</span></li>
+                        <li data-value="ميانمار">ميانمار<span>&times;</span></li>
+                        <li data-value="نامبيا">نامبيا<span>&times;</span></li>
+                        <li data-value="ناورو">ناورو<span>&times;</span></li>
+                        <li data-value="نيبال">نيبال<span>&times;</span></li>
+                        <li data-value="هولندا">هولندا<span>&times;</span></li>
+                        <li data-value="نيوزيلاندا">نيوزيلاندا<span>&times;</span></li>
+                        <li data-value="نيكاراغوا">نيكاراغوا<span>&times;</span></li>
+                        <li data-value="النيجر">النيجر<span>&times;</span></li>
+                        <li data-value="نيجيريا">نيجيريا<span>&times;</span></li>
+                        <li data-value="مقدونيا">مقدونيا<span>&times;</span></li>
+                        <li data-value="النرويج">النرويج<span>&times;</span></li>
+                        <li data-value="سلطنة عمان">سلطنة عمان<span>&times;</span></li>
+                        <li data-value="باكستان">باكستان<span>&times;</span></li>
+                        <li data-value="جزيرة بالاو">جزيرة بالاو<span>&times;</span></li>
+                        <li data-value="فلسطين">فلسطين<span>&times;</span></li>
+                        <li data-value="بنما">بنما<span>&times;</span></li>
+                        <li data-value="بابوا غينيا الجديدة">بابوا غينيا الجديدة<span>&times;</span></li>
+                        <li data-value="باراغواي">باراغواي<span>&times;</span></li>
+                        <li data-value="بيرو">بيرو<span>&times;</span></li>
+                        <li data-value="الفليبين">الفليبين<span>&times;</span></li>
+                        <li data-value="بولندا">بولندا<span>&times;</span></li>
+                        <li data-value="البرتغال">البرتغال<span>&times;</span></li>
+                        <li data-value="قطر">قطر<span>&times;</span></li>
+                        <li data-value="رومانيا">رومانيا<span>&times;</span></li>
+                        <li data-value="روسيا">روسيا<span>&times;</span></li>
+                        <li data-value="رواندا">رواندا<span>&times;</span></li>
+                        <li data-value="سانت كيتس ونيفيس">سانت كيتس ونيفيس<span>&times;</span></li>
+                        <li data-value="سانت لوسيا">سانت لوسيا<span>&times;</span></li>
+                        <li data-value="سانت فنسنت وجزر غرينادين">سانت فنسنت والغرينادين<span>&times;</span></li>
+                        <li data-value="ساموا">ساموا<span>&times;</span></li>
+                        <li data-value="سان مارينو">سان مارينو<span>&times;</span></li>
+                        <li data-value="ساو تومي وبرينسيبي">ساو تومي وبرينسيبي<span>&times;</span></li>
+                        <li data-value="المملكة العربية السعودية">المملكة العربية السعودية<span>&times;</span></li>
+                        <li data-value="السنغال">السنغال<span>&times;</span></li>
+                        <li data-value="صربيا">صربيا<span>&times;</span></li>
+                        <li data-value="سيشيل">سيشيل<span>&times;</span></li>
+                        <li data-value="سيرا ليون">سيرا ليون<span>&times;</span></li>
+                        <li data-value="سنغافورة">سنغافورة<span>&times;</span></li>
+                        <li data-value="سلوفاكيا">سلوفاكيا<span>&times;</span></li>
+                        <li data-value="سلوفينيا">سلوفينيا<span>&times;</span></li>
+                        <li data-value="جزر سليمان">جزر سليمان<span>&times;</span></li>
+                        <li data-value="الصومال">الصومال<span>&times;</span></li>
+                        <li data-value="جنوب أفريقيا">جنوب أفريقيا<span>&times;</span></li>
+                        <li data-value="السودان">السودان<span>&times;</span></li>
+                        <li data-value="إسبانيا">إسبانيا<span>&times;</span></li>
+                        <li data-value="سيريلانكا">سيريلانكا<span>&times;</span></li>
+                        <li data-value="سورينام">سورينام<span>&times;</span></li>
+                        <li data-value="السويد">السويد<span>&times;</span></li>
+                        <li data-value="سويسرا">سويسرا<span>&times;</span></li>
+                        <li data-value="سوريا">سوريا<span>&times;</span></li>
+                        <li data-value="طاجيكستان">طاجيكستان<span>&times;</span></li>
+                        <li data-value="تنزانيا">تنزانيا<span>&times;</span></li>
+                        <li data-value="تايلاند">تايلاند<span>&times;</span></li>
+                        <li data-value="توغو">توغو<span>&times;</span></li>
+                        <li data-value="تونغا">تونغا<span>&times;</span></li>
+                        <li data-value="ترينيداد وتوباجو">ترينيداد وتوباجو<span>&times;</span></li>
+                        <li data-value="تونس">تونس<span>&times;</span></li>
+                        <li data-value="تركيا">تركيا<span>&times;</span></li>
+                        <li data-value="تركمانستان">تركمانستان<span>&times;</span></li>
+                        <li data-value="توفالو">توفالو<span>&times;</span></li>
+                        <li data-value="أوغندا">أوغندا<span>&times;</span></li>
+                        <li data-value="أوكرانيا">أوكرانيا<span>&times;</span></li>
+                        <li data-value="الإمارات العربية المتحدة">الإمارات العربية المتحدة<span>&times;</span></li>
+                        <li data-value="بريطانيا">بريطانيا<span>&times;</span></li>
+                        <li data-value="الولايات المتحدة الامريكية">الولايات المتحدة الامريكية<span>&times;</span></li>
+                        <li data-value="أوروغواي">أوروغواي<span>&times;</span></li>
+                        <li data-value="أوزبكستان">أوزبكستان<span>&times;</span></li>
+                        <li data-value="فانواتو">فانواتو<span>&times;</span></li>
+                        <li data-value="الفاتيكان">الفاتيكان<span>&times;</span></li>
+                        <li data-value="فنزويلا">فنزويلا<span>&times;</span></li>
+                        <li data-value="فيتنام">فيتنام<span>&times;</span></li>
+                        <li data-value="اليمن">اليمن<span>&times;</span></li>
+                        <li data-value="نيوي">نيوي<span>&times;</span></li>
+                        <li data-value="زامبيا">زامبيا<span>&times;</span></li>
+                        <li data-value="زيمبابوي">زيمبابوي<span>&times;</span></li>
+                        <li data-value="تايوان">تايوان<span>&times;</span></li>
+                        <li data-value="زائير">زائير<span>&times;</span></li>
+                    </ul>
+                </div>
+                <!-- ./Selected Countries Box -->
+
+                <!-- Countries area -->
+                <div class="select-country">
+
+                    <!-- Close Btn -->
+                    <span class="close-btn">&times;</span>
+                    <!-- ./Close Btn -->
+
+                    <!-- Search -->
+                    <div class="search">
+                        <span class="all-btn">
+                            تحديد الكل
+                        </span>
+                        <input type="text" placeholder="ابحث ...">
+                    </div>
+                    <!-- ./Search -->
+
+                    <!-- Countries List -->
+                    <ul class="countries-list">
+                        <li data-value="أفغانستان"><img src="assets/images/flags/af.svg">أفغانستان</li>
+                        <li data-value="ألبانيا"><img src="assets/images/flags/al.svg">ألبانيا</li>
+                        <li data-value="الجزائر"><img src="assets/images/flags/dz.svg">الجزائر</li>
+                        <li data-value="أندورا"><img src="assets/images/flags/ad.svg">أندورا</li>
+                        <li data-value="أنغولا"><img src="assets/images/flags/ao.svg">أنغولا</li>
+                        <li data-value="أنتيغوا وباربودا"><img src="assets/images/flags/ag.svg">أنتيغوا وباربودا</li>
+                        <li data-value="الأرجنتين"><img src="assets/images/flags/ar.svg">الأرجنتين</li>
+                        <li data-value="أرمينيا"><img src="assets/images/flags/am.svg">أرمينيا</li>
+                        <li data-value="أستراليا"><img src="assets/images/flags/au.svg">أستراليا</li>
+                        <li data-value="النمسا"><img src="assets/images/flags/at.svg">النمسا</li>
+                        <li data-value="أذربيجان"><img src="assets/images/flags/az.svg">أذربيجان</li>
+                        <li data-value="جزر البهاما"><img src="assets/images/flags/bs.svg">جزر البهاما</li>
+                        <li data-value="البحرين"><img src="assets/images/flags/bh.svg">البحرين</li>
+                        <li data-value="بنغلاديش"><img src="assets/images/flags/bd.svg">بنغلاديش</li>
+                        <li data-value="بربادوس"><img src="assets/images/flags/bb.svg">بربادوس</li>
+                        <li data-value="بيلاروسيا"><img src="assets/images/flags/by.svg">بيلاروسيا</li>
+                        <li data-value="بلجيكا"><img src="assets/images/flags/be.svg">بلجيكا</li>
+                        <li data-value="بليز"><img src="assets/images/flags/bz.svg">بليز</li>
+                        <li data-value="بنين"><img src="assets/images/flags/bj.svg">بنين</li>
+                        <li data-value="بوتان"><img src="assets/images/flags/bt.svg">بوتان</li>
+                        <li data-value="بوليفيا"><img src="assets/images/flags/bo.svg">بوليفيا</li>
+                        <li data-value="البوسنة والهرسك"><img src="assets/images/flags/ba.svg">البوسنة والهرسك</li>
+                        <li data-value="بوتسوانا"><img src="assets/images/flags/bw.svg">بوتسوانا</li>
+                        <li data-value="البرازيل"><img src="assets/images/flags/br.svg">البرازيل</li>
+                        <li data-value="بروناي"><img src="assets/images/flags/bn.svg">بروناي</li>
+                        <li data-value="بلغاريا"><img src="assets/images/flags/bg.svg">بلغاريا</li>
+                        <li data-value="بوركينا فاسو"><img src="assets/images/flags/bf.svg">بوركينا فاسو</li>
+                        <li data-value="بوروندي"><img src="assets/images/flags/bi.svg">بوروندي</li>
+                        <li data-value="كمبوديا"><img src="assets/images/flags/kh.svg">كمبوديا</li>
+                        <li data-value="الكاميرون"><img src="assets/images/flags/cm.svg">الكاميرون</li>
+                        <li data-value="كندا"><img src="assets/images/flags/ca.svg">كندا</li>
+                        <li data-value="كابو فيردي"><img src="assets/images/flags/cv.svg">كابو فيردي</li>
+                        <li data-value="جمهورية افريقيا الوسطى"><img src="assets/images/flags/cf.svg">جمهورية افريقيا
+                            الوسطى</li>
+                        <li data-value="تشاد"><img src="assets/images/flags/td.svg">تشاد</li>
+                        <li data-value="تشيلي"><img src="assets/images/flags/cl.svg">تشيلي</li>
+                        <li data-value="الصين"><img src="assets/images/flags/chn.svg">الصين</li>
+                        <li data-value="كولومبيا"><img src="assets/images/flags/co.svg">كولومبيا</li>
+                        <li data-value="جزر القمر"><img src="assets/images/flags/km.svg">جزر القمر</li>
+                        <li data-value="الكونغو"><img src="assets/images/flags/cd.svg">الكونغو</li>
+                        <li data-value="جزر كوك"><img src="assets/images/flags/ck.svg">جزر كوك</li>
+                        <li data-value="كوستا ريكا"><img src="assets/images/flags/cr.svg">كوستا ريكا</li>
+                        <li data-value="ساحل العاج"><img src="assets/images/flags/ci.svg">ساحل العاج</li>
+                        <li data-value="كرواتيا"><img src="assets/images/flags/hr.svg">كرواتيا</li>
+                        <li data-value="كوبا"><img src="assets/images/flags/cu.svg">كوبا</li>
+                        <li data-value="قبرص"><img src="assets/images/flags/cy.svg">قبرص</li>
+                        <li data-value="التشيك"><img src="assets/images/flags/cz.svg">التشيك</li>
+                        <li data-value="الدنمارك"><img src="assets/images/flags/dk.svg">الدنمارك</li>
+                        <li data-value="جيبوتي"><img src="assets/images/flags/dj.svg">جيبوتي</li>
+                        <li data-value="دومينيكا"><img src="assets/images/flags/dom.png">دومينيكا</li>
+                        <li data-value="جمهورية الدومينيكان"><img src="assets/images/flags/do.svg">جمهورية الدومينيكان
+                        </li>
+                        <li data-value="تيمور الشرقية"><img src="assets/images/flags/tl.svg">تيمور الشرقية</li>
+                        <li data-value="الاكوادور"><img src="assets/images/flags/ec.svg">الاكوادور</li>
+                        <li data-value="مصر"><img src="assets/images/flags/eg.svg">مصر</li>
+                        <li data-value="السلفادور"><img src="assets/images/flags/sv.svg">السلفادور</li>
+                        <li data-value="غينيا الإستوائية"><img src="assets/images/flags/gq.svg">غينيا الإستوائية</li>
+                        <li data-value="إريتريا"><img src="assets/images/flags/er.svg">إريتريا</li>
+                        <li data-value="إستونيا"><img src="assets/images/flags/ee.svg">إستونيا</li>
+                        <li data-value="أثيوبيا"><img src="assets/images/flags/et.svg">أثيوبيا</li>
+                        <li data-value="فيجي"><img src="assets/images/flags/fj.svg">فيجي</li>
+                        <li data-value="فنلندا"><img src="assets/images/flags/fi.svg">فنلندا</li>
+                        <li data-value="فرنسا"><img src="assets/images/flags/fr.svg">فرنسا</li>
+                        <li data-value="الجابون"><img src="assets/images/flags/ga.svg">الجابون</li>
+                        <li data-value="غامبيا"><img src="assets/images/flags/gm.svg">غامبيا</li>
+                        <li data-value="جورجيا"><img src="assets/images/flags/ge.svg">جورجيا</li>
+                        <li data-value="ألمانيا"><img src="assets/images/flags/de.svg">ألمانيا</li>
+                        <li data-value="غانا"><img src="assets/images/flags/gh.svg">غانا</li>
+                        <li data-value="اليونان"><img src="assets/images/flags/gr.svg">اليونان</li>
+                        <li data-value="غرينادا"><img src="assets/images/flags/gd.svg">غرينادا</li>
+                        <li data-value="غواتيمالا"><img src="assets/images/flags/gt.svg">غواتيمالا</li>
+                        <li data-value="غينيا"><img src="assets/images/flags/gn.svg">غينيا</li>
+                        <li data-value="غيانا"><img src="assets/images/flags/gy.svg">غيانا</li>
+                        <li data-value="هايتي"><img src="assets/images/flags/ht.svg">هايتي</li>
+                        <li data-value="هندوراس"><img src="assets/images/flags/hn.svg">هندوراس</li>
+                        <li data-value="هونج كونج"><img src="assets/images/flags/hk.svg">هونج كونج</li>
+                        <li data-value="هنغاريا"><img src="assets/images/flags/hu.svg">هنغاريا</li>
+                        <li data-value="أيسلندا"><img src="assets/images/flags/is.svg">أيسلندا</li>
+                        <li data-value="إندونيسيا"><img src="assets/images/flags/id.svg">إندونيسيا</li>
+                        <li data-value="الهند"><img src="assets/images/flags/in.svg">الهند</li>
+                        <li data-value="إيران"><img src="assets/images/flags/ir.svg">إيران</li>
+                        <li data-value="العراق"><img src="assets/images/flags/iq.svg">العراق</li>
+                        <li data-value="أيرلندا"><img src="assets/images/flags/ie.svg">أيرلندا</li>
+                        <li data-value="إيطاليا"><img src="assets/images/flags/it.svg">إيطاليا</li>
+                        <li data-value="جامايكا"><img src="assets/images/flags/jm.svg">جامايكا</li>
+                        <li data-value="اليابان"><img src="assets/images/flags/jp.svg">اليابان</li>
+                        <li data-value="الأردن"><img src="assets/images/flags/jo.svg">الأردن</li>
+                        <li data-value="كازاخستان"><img src="assets/images/flags/kz.svg">كازاخستان</li>
+                        <li data-value="كينيا"><img src="assets/images/flags/ke.svg">كينيا</li>
+                        <li data-value="كيريباتي"><img src="assets/images/flags/ki.svg">كيريباتي</li>
+                        <li data-value="كوريا الشمالية"><img src="assets/images/flags/kp.svg">كوريا الشمالية</li>
+                        <li data-value="كوريا الجنوبية"><img src="assets/images/flags/kr.svg">كوريا الجنوبية</li>
+                        <li data-value="الكويت"><img src="assets/images/flags/kw.svg">الكويت</li>
+                        <li data-value="قيرغيزستان"><img src="assets/images/flags/kg.svg">قيرغيزستان</li>
+                        <li data-value="لاوس"><img src="assets/images/flags/la.svg">لاوس</li>
+                        <li data-value="لاتفيا"><img src="assets/images/flags/lv.svg">لاتفيا</li>
+                        <li data-value="لبنان"><img src="assets/images/flags/lb.svg">لبنان</li>
+                        <li data-value="ليسوتو"><img src="assets/images/flags/ls.svg">ليسوتو</li>
+                        <li data-value="ليبيريا"><img src="assets/images/flags/lr.svg">ليبيريا</li>
+                        <li data-value="ليبيا"><img src="assets/images/flags/ly.svg">ليبيا</li>
+                        <li data-value="ليختنشتاين"><img src="assets/images/flags/li.svg">ليختنشتاين</li>
+                        <li data-value="ليتوانيا"><img src="assets/images/flags/lt.svg">ليتوانيا</li>
+                        <li data-value="لوكسمبورغ"><img src="assets/images/flags/lu.svg">لوكسمبورغ</li>
+                        <li data-value="مدغشقر"><img src="assets/images/flags/mg.svg">مدغشقر</li>
+                        <li data-value="ماليزيا"><img src="assets/images/flags/my.svg">ماليزيا</li>
+                        <li data-value="ملاوي"><img src="assets/images/flags/mw.svg">ملاوي</li>
+                        <li data-value="جزر المالديف"><img src="assets/images/flags/mv.svg">جزر المالديف</li>
+                        <li data-value="مالي"><img src="assets/images/flags/ml.svg">مالي</li>
+                        <li data-value="مالطا"><img src="assets/images/flags/mt.svg">مالطا</li>
+                        <li data-value="جزر مارشال"><img src="assets/images/flags/mh.svg">جزر مارشال</li>
+                        <li data-value="موريتانيا"><img src="assets/images/flags/mr.svg">موريتانيا</li>
+                        <li data-value="موريشيوس"><img src="assets/images/flags/mu.svg">موريشيوس</li>
+                        <li data-value="المكسيك"><img src="assets/images/flags/mx.svg">المكسيك</li>
+                        <li data-value="مولدوفا"><img src="assets/images/flags/md.svg">مولدوفا</li>
+                        <li data-value="موناكو"><img src="assets/images/flags/mc.svg">موناكو</li>
+                        <li data-value="منغوليا"><img src="assets/images/flags/mn.svg">منغوليا</li>
+                        <li data-value="جمهورية الجبل الأسود"><img src="assets/images/flags/me.svg">جمهورية الجبل الأسود
+                        </li>
+                        <li data-value="المغرب"><img src="assets/images/flags/ma.svg">المغرب</li>
+                        <li data-value="موزمبيق"><img src="assets/images/flags/mz.svg">موزمبيق</li>
+                        <li data-value="ميانمار"><img src="assets/images/flags/mm.svg">ميانمار</li>
+                        <li data-value="نامبيا"><img src="assets/images/flags/na.svg">نامبيا</li>
+                        <li data-value="ناورو"><img src="assets/images/flags/nr.svg">ناورو</li>
+                        <li data-value="نيبال"><img src="assets/images/flags/np.svg">نيبال</li>
+                        <li data-value="هولندا"><img src="assets/images/flags/netherlands.png">هولندا</li>
+                        <li data-value="نيوزيلاندا"><img src="assets/images/flags/nz.svg">نيوزيلاندا</li>
+                        <li data-value="نيكاراغوا"><img src="assets/images/flags/ni.svg">نيكاراغوا</li>
+                        <li data-value="النيجر"><img src="assets/images/flags/ne.svg">النيجر</li>
+                        <li data-value="نيجيريا"><img src="assets/images/flags/ng.svg">نيجيريا</li>
+                        <li data-value="مقدونيا"><img src="assets/images/flags/mk.svg">مقدونيا</li>
+                        <li data-value="النرويج"><img src="assets/images/flags/no.svg">النرويج</li>
+                        <li data-value="سلطنة عمان"><img src="assets/images/flags/om.svg">سلطنة عمان</li>
+                        <li data-value="باكستان"><img src="assets/images/flags/pk.svg">باكستان</li>
+                        <li data-value="جزيرة بالاو"><img src="assets/images/flags/pw.svg">جزيرة بالاو</li>
+                        <li data-value="فلسطين"><img src="assets/images/flags/ps.svg">فلسطين</li>
+                        <li data-value="بنما"><img src="assets/images/flags/pa.svg">بنما</li>
+                        <li data-value="بابوا غينيا الجديدة"><img src="assets/images/flags/pg.svg">بابوا غينيا الجديدة
+                        </li>
+                        <li data-value="باراغواي"><img src="assets/images/flags/py.svg">باراغواي</li>
+                        <li data-value="بيرو"><img src="assets/images/flags/pe.svg">بيرو</li>
+                        <li data-value="الفليبين"><img src="assets/images/flags/ph.svg">الفليبين</li>
+                        <li data-value="بولندا"><img src="assets/images/flags/pl.svg">بولندا</li>
+                        <li data-value="البرتغال"><img src="assets/images/flags/pt.svg">البرتغال</li>
+                        <li data-value="قطر"><img src="assets/images/flags/qa.svg">قطر</li>
+                        <li data-value="رومانيا"><img src="assets/images/flags/ro.svg">رومانيا</li>
+                        <li data-value="روسيا"><img src="assets/images/flags/ru.svg">روسيا</li>
+                        <li data-value="رواندا"><img src="assets/images/flags/rw.svg">رواندا</li>
+                        <li data-value="سانت كيتس ونيفيس"><img src="assets/images/flags/kns.svg">سانت كيتس ونيفيس</li>
+                        <li data-value="سانت لوسيا"><img src="assets/images/flags/lc.svg">سانت لوسيا</li>
+                        <li data-value="سانت فنسنت وجزر غرينادين"><img src="assets/images/flags/vc.svg">سانت فنسنت
+                            والغرينادين</li>
+                        <li data-value="ساموا"><img src="assets/images/flags/ws.svg">ساموا</li>
+                        <li data-value="سان مارينو"><img src="assets/images/flags/sm.svg">سان مارينو</li>
+                        <li data-value="ساو تومي وبرينسيبي"><img src="assets/images/flags/st.svg">ساو تومي وبرينسيبي
+                        </li>
+                        <li data-value="المملكة العربية السعودية"><img src="assets/images/flags/sa.svg">المملكة العربية
+                            السعودية</li>
+                        <li data-value="السنغال"><img src="assets/images/flags/sn.svg">السنغال</li>
+                        <li data-value="صربيا"><img src="assets/images/flags/rs.svg">صربيا</li>
+                        <li data-value="سيشيل"><img src="assets/images/flags/sc.svg">سيشيل</li>
+                        <li data-value="سيرا ليون"><img src="assets/images/flags/sl.svg">سيرا ليون</li>
+                        <li data-value="سنغافورة"><img src="assets/images/flags/sg.svg">سنغافورة</li>
+                        <li data-value="سلوفاكيا"><img src="assets/images/flags/sk.svg">سلوفاكيا</li>
+                        <li data-value="سلوفينيا"><img src="assets/images/flags/si.svg">سلوفينيا</li>
+                        <li data-value="جزر سليمان"><img src="assets/images/flags/sb.svg">جزر سليمان</li>
+                        <li data-value="الصومال"><img src="assets/images/flags/so.svg">الصومال</li>
+                        <li data-value="جنوب أفريقيا"><img src="assets/images/flags/za.svg">جنوب أفريقيا</li>
+                        <li data-value="السودان"><img src="assets/images/flags/sd.svg">السودان</li>
+                        <li data-value="إسبانيا"><img src="assets/images/flags/es.svg">إسبانيا</li>
+                        <li data-value="سيريلانكا"><img src="assets/images/flags/lk.svg">سيريلانكا</li>
+                        <li data-value="سورينام"><img src="assets/images/flags/sr.svg">سورينام</li>
+                        <li data-value="السويد"><img src="assets/images/flags/se.svg">السويد</li>
+                        <li data-value="سويسرا"><img src="assets/images/flags/ch.svg">سويسرا</li>
+                        <li data-value="سوريا"><img src="assets/images/flags/sy.svg">سوريا</li>
+                        <li data-value="طاجيكستان"><img src="assets/images/flags/tj.svg">طاجيكستان</li>
+                        <li data-value="تنزانيا"><img src="assets/images/flags/tz.svg">تنزانيا</li>
+                        <li data-value="تايلاند"><img src="assets/images/flags/th.svg">تايلاند</li>
+                        <li data-value="توغو"><img src="assets/images/flags/tg.svg">توغو</li>
+                        <li data-value="تونغا"><img src="assets/images/flags/to.svg">تونغا</li>
+                        <li data-value="ترينيداد وتوباجو"><img src="assets/images/flags/tt.svg">ترينيداد وتوباجو</li>
+                        <li data-value="تونس"><img src="assets/images/flags/tn.svg">تونس</li>
+                        <li data-value="تركيا"><img src="assets/images/flags/tr.svg">تركيا</li>
+                        <li data-value="تركمانستان"><img src="assets/images/flags/tm.svg">تركمانستان</li>
+                        <li data-value="توفالو"><img src="assets/images/flags/tv.svg">توفالو</li>
+                        <li data-value="أوغندا"><img src="assets/images/flags/ug.svg">أوغندا</li>
+                        <li data-value="أوكرانيا"><img src="assets/images/flags/ua.svg">أوكرانيا</li>
+                        <li data-value="الإمارات العربية المتحدة"><img src="assets/images/flags/ae.svg">الإمارات العربية
+                            المتحدة</li>
+                        <li data-value="بريطانيا"><img src="assets/images/flags/gb.svg">بريطانيا</li>
+                        <li data-value="الولايات المتحدة الامريكية"><img src="assets/images/flags/us.svg">الولايات
+                            المتحدة الامريكية</li>
+                        <li data-value="أوروغواي"><img src="assets/images/flags/uy.svg">أوروغواي</li>
+                        <li data-value="أوزبكستان"><img src="assets/images/flags/uz.svg">أوزبكستان</li>
+                        <li data-value="فانواتو"><img src="assets/images/flags/vu.svg">فانواتو</li>
+                        <li data-value="الفاتيكان"><img src="assets/images/flags/va.svg">الفاتيكان</li>
+                        <li data-value="فنزويلا"><img src="assets/images/flags/ve.svg">فنزويلا</li>
+                        <li data-value="فيتنام"><img src="assets/images/flags/vn.svg">فيتنام</li>
+                        <li data-value="اليمن"><img src="assets/images/flags/ye.svg">اليمن</li>
+                        <li data-value="نيوي"><img src="assets/images/flags/nu.svg">نيوي</li>
+                        <li data-value="زامبيا"><img src="assets/images/flags/zm.svg">زامبيا</li>
+                        <li data-value="زيمبابوي"><img src="assets/images/flags/zw.svg">زيمبابوي</li>
+                        <li data-value="تايوان"><img src="assets/images/flags/tw.svg">تايوان</li>
+                        <li data-value="زائير"><img src="assets/images/flags/zar.svg">زائير</li>
+                        <li class="no-results">
+                            <div class="alert alert-info">لا يوجد دول بهذا الاسم!</div>
+                        </li>
+                    </ul>
+                    <!-- ./Countries List -->
+
+                    <!-- Select for send to server -->
+                    <select></select>
+                    <!-- ./Select for send to server -->
+
+                </div>
+                <!-- ./Countries area -->
+            </div>
+            <hr class="border-down">
+            <!-- ./Countries which site work on or not -->
+
+            <!-- Support Infos -->
+            <h3 class="sub-main-title">معلومات التواصل الاجتماعي والدعم الفني:</h3>
+            <div class="row support-form">
+                <div class="col-3">
+                    <label><i class="fas fa-phone"></i> رقم الهاتف</label>
+                    <input type="tel">
+                </div>
+                <div class="col-3">
+                    <label><i class="fas fa-at"></i> البريد الإلكتروني</label>
+                    <input type="email">
+                </div>
+                <div class="col-3">
+                    <label><i class="fab fa-whatsapp"></i> واتساب</label>
+                    <input type="tel">
+                </div>
+                <div class="col-3">
+                    <label><i class="fab fa-instagram"></i> انستجرام</label>
+                    <input type="text">
+                </div>
+                <div class="col-4">
+                    <label><i class="fab fa-facebook-f"></i> فيس بوك</label>
+                    <input type="text">
+                </div>
+                <div class="col-4">
+                    <label><i class="fab fa-twitter"></i> تويتر</label>
+                    <input type="text">
+                </div>
+                <div class="col-4">
+                    <label><i class="fab fa-linkedin-in"></i> لينكد إن</label>
+                    <input type="text">
+                </div>
+                <div class="col-12">
+                    <button class="custom-save-btn" type="submit">
+                        <i class="far fa-save"></i>
+                        حفظ
+                    </button>
+                </div>
+            </div>
+            <!-- ./Support Infos -->
+
+        </form>
+        <!-- ###### ./Website Settings ###### -->
+
+    </div>
+    <!-- ./Page Body -->
+
+
+    <!-- Genereal Js Files -->
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/all.js"></script>
+
+    <!-- Custom JS File -->
+    <script src="assets/js/plugin.js"></script>
+
+</body>
+
+</html>
