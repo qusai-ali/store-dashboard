@@ -619,6 +619,10 @@ $(document).ready(function(){
 
     /* -- Add Product Image --*/
     $('.photo-gallery .photo-gallery-footer .close-btn').on('click',function(){
+        $('.photo-gallery .photo-gallery-containt .img-containt').each(function() {
+            $(this).removeClass('select');
+        });
+        $('.photo-gallery .photo-gallery-footer span.save-img-btn').addClass('disactive');
         $('.overlay').toggleClass('active');
         $('.photo-gallery').toggleClass('active');
     });
@@ -630,24 +634,30 @@ $(document).ready(function(){
         $('.photo-gallery').toggleClass('active');
     });
 
-    // $('.photo-gallery .photo-gallery-containt img').on('click',function(){
-    //     $('.photo-gallery .photo-gallery-containt div img').each(function() {
-    //         $(this).removeClass('select');
-    //     });
-    //     $(this).addClass('select');
-    //     var img_path = $(this).attr('src');
-    //     $(this).parents('.photo-gallery-containt').find('.upload-file img').attr('src',img_path);
-    // });
+    $('.photo-gallery .photo-gallery-containt .img-containt img').on('click',function(){
+        $('.photo-gallery .photo-gallery-containt .img-containt').each(function() {
+            $(this).removeClass('select');
+        });
+        $(this).parent().addClass('select');
+        var img_path = $(this).attr('src');
+        $('.photo-gallery .photo-gallery-footer span.save-img-btn').removeClass('disactive');
+    });
 
     $('.photo-gallery .photo-gallery-footer .save-img-btn').on('click',function(){
-        var img = $(this).parents('.photo-gallery').find('.photo-gallery-containt .upload-file img').attr('src');
-        var target = $(this).attr('data-target');
-        $('.overlay').toggleClass('active');
-        $('.photo-gallery').toggleClass('active');
-        $('.add-product-box .product-img-box .upload-file').find('img[data-target="'+target+'"]').attr('src',img);
+        $('.photo-gallery .photo-gallery-containt .img-containt').each(function() {
+            if( $(this).hasClass('select') ) 
+            {
+                var img = $(this).find('img').attr('src');
+                var target = $('.photo-gallery .photo-gallery-footer .save-img-btn').attr('data-target');
+                $('.overlay').toggleClass('active');
+                $('.photo-gallery').toggleClass('active');
+                $('.add-product-box .product-img-box .upload-file').find('img[data-target="'+target+'"]').attr('src',img);
+            }
+        });
     });
     /* ========= ./Add Product Image =========== */
 
+<<<<<<< Updated upstream
     /* ---------- specification table ------------*/
     $('.add-new-specification').on('click',function(){
         var new_specification_row = `
@@ -748,6 +758,16 @@ $(document).ready(function(){
         $('.add-product-box .adding-group table.price-table tbody').append(new_price_row);
     });
     /* ========= ./price table ========== */
+=======
+    /* --------- Product Image Popup --------------*/
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    })
+
+    /* ========= ./Product Image Popup =========== */
+
+>>>>>>> Stashed changes
 
     /* -- Edit-Product Datatable --*/
     var datatable = $('#product-table').DataTable({
