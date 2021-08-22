@@ -1434,7 +1434,9 @@ label .required {
 .add-product-box .product-img-box .upload-file img {
   width: 100%;
   height: 175px;
-  object-fit: cover;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid #e1e1e1;
 }
 .add-product-box .product-img-box .upload-file.main img {
   height: 383px;
@@ -1565,6 +1567,9 @@ label .required {
   font-size: 18px;
   margin-left: 5px;
 }
+.add-product-box .adding-group table {
+  background: #fff;
+}
 .add-product-box .adding-group table thead tr th {
   font-size: 17px;
   font-weight: 600;
@@ -1616,7 +1621,9 @@ label .required {
   cursor: pointer;
   background-color: transparent;
 }
-
+.add-product-box .adding-group table tbody tr td input[type="number"] {
+  padding-right: 30px;
+}
 .add-product-box
   .adding-group
   table.price-table
@@ -1644,7 +1651,8 @@ label .required {
   right: 0;
   background-color: white;
   z-index: 6;
-  max-height: 154px;
+  max-height: 155px;
+  border: 1px solid #e1e1e1;
   overflow: auto;
   opacity: 0;
   visibility: hidden;
@@ -1699,7 +1707,17 @@ label .required {
   background: #bbb;
 }
 .add-product-box
-  .adding-group
+.adding-group
+  table
+  tbody
+  tr
+  td
+  .list-container
+  .specifications-list {
+    margin-top: 0;
+  }
+.add-product-box
+.adding-group
   table
   tbody
   tr
@@ -1711,11 +1729,11 @@ label .required {
   display: block;
   background-color: transparent;
   color: var(--sub-menu-bg);
-  margin: 5px 0px;
-  padding: 4px;
+  margin: 0;
+  padding: 5px 10px;
   cursor: pointer;
   font-size: 16px;
-  border-radius: 0px;
+  border-radius: 0;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -1761,6 +1779,7 @@ label .required {
 }
 .add-product-box .adding-group ul {
   margin-top: 10px;
+  text-align: right;
 }
 .add-product-box .adding-group ul li {
   padding: 5px 8px 8px 30px;
