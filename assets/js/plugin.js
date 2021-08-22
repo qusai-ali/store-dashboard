@@ -648,6 +648,106 @@ $(document).ready(function(){
     });
     /* ========= ./Add Product Image =========== */
 
+    /* ---------- specification table ------------*/
+    $('.add-new-specification').on('click',function(){
+        var new_specification_row = `
+            <tr>
+                <td> <input type="text" autocomplete="off" name="specification_name[]"> </td>
+                <td> <input type="text" autocomplete="off" name="specification_value[]"> </td>
+                <td> <input type="text" autocomplete="off" name="specification_value[]"> </td>
+                <td> <input type="text" autocomplete="off" name="specification_value[]"> </td>
+                <td> <input type="text" autocomplete="off" name="specification_value[]"> </td>
+                <td> <input type="text" autocomplete="off" name="specification_value[]"> </td>
+                <td> <input type="text" autocomplete="off" name="specification_value[]"> </td>
+                <td>
+                    <a href="#" class="delete-specification" title="حذف">
+                        <i class="fas fa-trash-alt"></i>
+                    </a>
+                </td>
+            </tr>
+        `;
+        $('.add-product-box .adding-group table tbody').append(new_specification_row);
+    });
+
+    /* ========= ./specification table ========== */
+
+    /* ---------- price table ------------*/
+    var price_row_number = 1;
+    $('.add-product-box .adding-group table.price-table tbody tr td .list-triger').on('click',function(){
+        $('.add-product-box .adding-group table.price-table tbody tr td .list-triger').each(function(){
+            $(this).parent().find('.list-container').removeClass('active');
+        });
+        $(this).parent().find('.list-container').toggleClass('active');
+    });
+
+    $('.add-product-box .adding-group table.price-table tbody tr td .list-container .specifications-list li').on('click',function(){
+        var text_value = $(this).text();
+        $(this).parents('td').find('span').text(text_value);
+        $(this).parents('td').find('.list-triger').attr('value',text_value);
+        $(this).parents('.list-container').toggleClass('active'); 
+    });
+
+    $('.add-new-price').on('click',function(){
+        price_row_number = price_row_number + 1 ;
+        var new_price_row = `
+            <tr>
+                <td> <span>`+price_row_number+`</span> </td>
+                <td>
+                    <span></span>
+                    <input type="text" class="list-triger hidden-input">
+                    <div class="list-container">
+                        <ul class="specifications-list">
+                            <li>الكل</li>
+                            <li>أخضر</li>
+                            <li>أحمر</li>
+                            <li>ذهبي</li>
+                            <li>أسود</li>
+                            <li>أبيض</li>
+                            <li>برتقالي</li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <span></span>
+                    <input type="text" class="list-triger hidden-input">
+                    <div class="list-container">
+                        <ul class="specifications-list">
+                            <li>الكل</li>
+                            <li>512M</li>
+                            <li>1G</li>
+                            <li>2G</li>
+                            <li>3G</li>
+                            <li>4G</li>
+                            <li>6G</li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <span></span>
+                    <input type="text" class="list-triger hidden-input">
+                    <div class="list-container">
+                        <ul class="specifications-list">
+                            <li>الكل</li>
+                            <li>8G</li>
+                            <li>16G</li>
+                            <li>32G</li>
+                            <li>64G</li>
+                            <li>128G</li>
+                            <li>256G</li>
+                        </ul>
+                    </div>
+                </td>
+                <td> <input type="text" autocomplete="off"> </td>
+                <td>
+                    <a class="delete-price" title="حذف">
+                        <i class="fas fa-trash-alt"></i>
+                    </a>
+                </td>
+            </tr>
+        `;
+        $('.add-product-box .adding-group table.price-table tbody').append(new_price_row);
+    });
+    /* ========= ./price table ========== */
 
     /* -- Edit-Product Datatable --*/
     var datatable = $('#product-table').DataTable({
