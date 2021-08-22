@@ -198,12 +198,7 @@
                 <ul>
                     <li>
                         <a href="#">
-                            إضافة قوائم جديدة
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            تحرير القوائم
+                            إضافة / تحرير القوائم 
                         </a>
                     </li>
                 </ul>
@@ -211,12 +206,7 @@
                 <ul>
                     <li>
                         <a href="#">
-                            إضافة قسم جديد
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            تحرير القوائم
+                            إضافة / تحرير القوائم
                         </a>
                     </li>
                 </ul>
@@ -225,13 +215,8 @@
                 <h4 class="list-title">سطر القوائم</h4>
                 <ul>
                     <li>
-                        <a href="add-line-list.html" class="done">
-                            إضافة قسم جديد
-                        </a>
-                    </li>
-                    <li>
                         <a href="edit-line-list.html" class="done">
-                            تحرير القوائم
+                            إضافة / تحرير القوائم
                         </a>
                     </li>
                 </ul>
@@ -239,12 +224,7 @@
                 <ul>
                     <li>
                         <a href="#">
-                            إضافة قسم جديد
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            تحرير القوائم
+                            إضافة / تحرير القوائم
                         </a>
                     </li>
                 </ul>
@@ -252,12 +232,7 @@
                 <ul>
                     <li>
                         <a href="#">
-                            إضافة قسم جديد
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            تحرير القوائم
+                            إضافة / تحرير القوائم
                         </a>
                     </li>
                 </ul>
@@ -267,12 +242,7 @@
                 <ul>
                     <li>
                         <a href="#">
-                            إضافة قسم جديد
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            تحرير الأقسام
+                           إضافة / تحرير الأقسام
                         </a>
                     </li>
                 </ul>
@@ -280,12 +250,7 @@
                 <ul>
                     <li>
                         <a href="#">
-                            إضافة براند جديد
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            تحرير البراندات
+                           إضافة / تحرير البراندات
                         </a>
                     </li>
                 </ul>
@@ -678,436 +643,463 @@
 
         <!-- ###### Edit List ###### -->
         <h3 class="main-section-title">
-            تحرير سطر القوائم
+            سطر القوائم
         </h3>
 
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="edit-list">
-                        <div class="ui-state-default">
-                            <p>أمازون الخاص بك</p>
-                            <ul>
-                                <li>
-                                    <span class="edit-list-btn">
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-times"></i>
-                                    </span>
-                                </li>
-                                <li>
-                                    <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
-                                </li>
-                                <li>
-                                    <span class="handle"><i class="fas fa-arrows-alt"></i></span>
-                                </li>
-                            </ul>
-                            <div class="edit-form">
-                                <form method="POST" action="#">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="أمازون الخاص بك" required>
-                                                <label>عنوان القائمة:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="#####" required>
-                                                <label>الرابط:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="custom-save-btn" type="submit">
-                                                <i class="far fa-save"></i>
-                                                تعديل
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+            <form method="POST" action="#">
+                <div class="row">
+                    <div class="col-6 pr-0">
+                        <div class="input-group">
+                            <input type="text" value="" required>
+                            <label>عنوان القائمة:<span class="required">*</span></label>
                         </div>
+                    </div>
+                    <div class="col-6 pl-0">
+                        <div class="input-group">
+                            <input type="text" value="" required>
+                            <label>الرابط:<span class="required">*</span></label>
+                        </div>
+                    </div>
+                    <div class="col-12 px-0 mb-4">
+                        <button class="custom-save-btn" type="button">
+                            <i class="fas fa-plus"></i>
+                            إضافة
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
 
-                        <div class="ui-state-default">
-                            <p>عرض اليوم</p>
-                            <ul>
-                                <li>
-                                    <span class="edit-list-btn">
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-times"></i>
-                                    </span>
-                                </li>
-                                <li>
-                                    <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
-                                </li>
-                                <li>
-                                    <span class="handle"><i class="fas fa-arrows-alt"></i></span>
-                                </li>
-                            </ul>
-                            <div class="edit-form">
-                                <form method="POST" action="#">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="عروض اليوم" required>
-                                                <label>عنوان القائمة:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="#####" required>
-                                                <label>الرابط:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="custom-save-btn" type="submit">
-                                                <i class="far fa-save"></i>
-                                                تعديل
-                                            </button>
-                                        </div>
+        <form method="POST" action="#">
+            <div class="edit-list">
+                <div class="ui-state-default">
+                    <p>أمازون الخاص بك</p>
+                    <ul>
+                        <li>
+                            <span class="edit-list-btn">
+                                <i class="fas fa-pencil-alt"></i>
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
+                        </li>
+                        <li>
+                            <span class="handle"><i class="fas fa-arrows-alt"></i></span>
+                        </li>
+                    </ul>
+                    <div class="edit-form">
+                        <form method="POST" action="#">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="أمازون الخاص بك" required>
+                                        <label>عنوان القائمة:<span class="required">*</span></label>
                                     </div>
-                                </form>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="#####" required>
+                                        <label>الرابط:<span class="required">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="custom-save-btn" type="submit">
+                                        <i class="far fa-save"></i>
+                                        تعديل
+                                    </button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
+                    </div>
+                </div>
 
-                        <div class="ui-state-default">
-                            <p>ابدأ البيع</p>
-                            <ul>
-                                <li>
-                                    <span class="edit-list-btn">
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-times"></i>
-                                    </span>
-                                </li>
-                                <li>
-                                    <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
-                                </li>
-                                <li>
-                                    <span class="handle"><i class="fas fa-arrows-alt"></i></span>
-                                </li>
-                            </ul>
-                            <div class="edit-form">
-                                <form method="POST" action="#">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="أبدأ البيع" required>
-                                                <label>عنوان القائمة:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="#####" required>
-                                                <label>الرابط:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="custom-save-btn" type="submit">
-                                                <i class="far fa-save"></i>
-                                                تعديل
-                                            </button>
-                                        </div>
+                <div class="ui-state-default">
+                    <p>عرض اليوم</p>
+                    <ul>
+                        <li>
+                            <span class="edit-list-btn">
+                                <i class="fas fa-pencil-alt"></i>
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
+                        </li>
+                        <li>
+                            <span class="handle"><i class="fas fa-arrows-alt"></i></span>
+                        </li>
+                    </ul>
+                    <div class="edit-form">
+                        <form method="POST" action="#">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="عروض اليوم" required>
+                                        <label>عنوان القائمة:<span class="required">*</span></label>
                                     </div>
-                                </form>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="#####" required>
+                                        <label>الرابط:<span class="required">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="custom-save-btn" type="submit">
+                                        <i class="far fa-save"></i>
+                                        تعديل
+                                    </button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
+                    </div>
+                </div>
 
-                        <div class="ui-state-default">
-                            <p>المساعدة</p>
-                            <ul>
-                                <li>
-                                    <span class="edit-list-btn">
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-times"></i>
-                                    </span>
-                                </li>
-                                <li>
-                                    <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
-                                </li>
-                                <li>
-                                    <span class="handle"><i class="fas fa-arrows-alt"></i></span>
-                                </li>
-                            </ul>
-                            <div class="edit-form">
-                                <form method="POST" action="#">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="المساعدة" required>
-                                                <label>عنوان القائمة:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="#####" required>
-                                                <label>الرابط:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="custom-save-btn" type="submit">
-                                                <i class="far fa-save"></i>
-                                                تعديل
-                                            </button>
-                                        </div>
+                <div class="ui-state-default">
+                    <p>ابدأ البيع</p>
+                    <ul>
+                        <li>
+                            <span class="edit-list-btn">
+                                <i class="fas fa-pencil-alt"></i>
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
+                        </li>
+                        <li>
+                            <span class="handle"><i class="fas fa-arrows-alt"></i></span>
+                        </li>
+                    </ul>
+                    <div class="edit-form">
+                        <form method="POST" action="#">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="أبدأ البيع" required>
+                                        <label>عنوان القائمة:<span class="required">*</span></label>
                                     </div>
-                                </form>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="#####" required>
+                                        <label>الرابط:<span class="required">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="custom-save-btn" type="submit">
+                                        <i class="far fa-save"></i>
+                                        تعديل
+                                    </button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
+                    </div>
+                </div>
 
-                        <div class="ui-state-default">
-                            <p>الأزياء</p>
-                            <ul>
-                                <li>
-                                    <span class="edit-list-btn">
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-times"></i>
-                                    </span>
-                                </li>
-                                <li>
-                                    <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
-                                </li>
-                                <li>
-                                    <span class="handle"><i class="fas fa-arrows-alt"></i></span>
-                                </li>
-                            </ul>
-                            <div class="edit-form">
-                                <form method="POST" action="#">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="الأزياء" required>
-                                                <label>عنوان القائمة:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="#####" required>
-                                                <label>الرابط:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="custom-save-btn" type="submit">
-                                                <i class="far fa-save"></i>
-                                                تعديل
-                                            </button>
-                                        </div>
+                <div class="ui-state-default">
+                    <p>المساعدة</p>
+                    <ul>
+                        <li>
+                            <span class="edit-list-btn">
+                                <i class="fas fa-pencil-alt"></i>
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
+                        </li>
+                        <li>
+                            <span class="handle"><i class="fas fa-arrows-alt"></i></span>
+                        </li>
+                    </ul>
+                    <div class="edit-form">
+                        <form method="POST" action="#">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="المساعدة" required>
+                                        <label>عنوان القائمة:<span class="required">*</span></label>
                                     </div>
-                                </form>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="#####" required>
+                                        <label>الرابط:<span class="required">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="custom-save-btn" type="submit">
+                                        <i class="far fa-save"></i>
+                                        تعديل
+                                    </button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
+                    </div>
+                </div>
 
-                        <div class="ui-state-default">
-                            <p>العطور</p>
-                            <ul>
-                                <li>
-                                    <span class="edit-list-btn">
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-times"></i>
-                                    </span>
-                                </li>
-                                <li>
-                                    <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
-                                </li>
-                                <li>
-                                    <span class="handle"><i class="fas fa-arrows-alt"></i></span>
-                                </li>
-                            </ul>
-                            <div class="edit-form">
-                                <form method="POST" action="#">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="العطور" required>
-                                                <label>عنوان القائمة:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="#####" required>
-                                                <label>الرابط:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="custom-save-btn" type="submit">
-                                                <i class="far fa-save"></i>
-                                                تعديل
-                                            </button>
-                                        </div>
+                <div class="ui-state-default">
+                    <p>الأزياء</p>
+                    <ul>
+                        <li>
+                            <span class="edit-list-btn">
+                                <i class="fas fa-pencil-alt"></i>
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
+                        </li>
+                        <li>
+                            <span class="handle"><i class="fas fa-arrows-alt"></i></span>
+                        </li>
+                    </ul>
+                    <div class="edit-form">
+                        <form method="POST" action="#">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="الأزياء" required>
+                                        <label>عنوان القائمة:<span class="required">*</span></label>
                                     </div>
-                                </form>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="#####" required>
+                                        <label>الرابط:<span class="required">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="custom-save-btn" type="submit">
+                                        <i class="far fa-save"></i>
+                                        تعديل
+                                    </button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
+                    </div>
+                </div>
 
-                        <div class="ui-state-default">
-                            <p>الإلكترونيات</p>
-                            <ul>
-                                <li>
-                                    <span class="edit-list-btn">
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-times"></i>
-                                    </span>
-                                </li>
-                                <li>
-                                    <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
-                                </li>
-                                <li>
-                                    <span class="handle"><i class="fas fa-arrows-alt"></i></span>
-                                </li>
-                            </ul>
-                            <div class="edit-form">
-                                <form method="POST" action="#">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="الإلكترونيات" required>
-                                                <label>عنوان القائمة:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="#####" required>
-                                                <label>الرابط:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="custom-save-btn" type="submit">
-                                                <i class="far fa-save"></i>
-                                                تعديل
-                                            </button>
-                                        </div>
+                <div class="ui-state-default">
+                    <p>العطور</p>
+                    <ul>
+                        <li>
+                            <span class="edit-list-btn">
+                                <i class="fas fa-pencil-alt"></i>
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
+                        </li>
+                        <li>
+                            <span class="handle"><i class="fas fa-arrows-alt"></i></span>
+                        </li>
+                    </ul>
+                    <div class="edit-form">
+                        <form method="POST" action="#">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="العطور" required>
+                                        <label>عنوان القائمة:<span class="required">*</span></label>
                                     </div>
-                                </form>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="#####" required>
+                                        <label>الرابط:<span class="required">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="custom-save-btn" type="submit">
+                                        <i class="far fa-save"></i>
+                                        تعديل
+                                    </button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
+                    </div>
+                </div>
 
-                        <div class="ui-state-default">
-                            <p>مستلزمات المنزل</p>
-                            <ul>
-                                <li>
-                                    <span class="edit-list-btn">
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-times"></i>
-                                    </span>
-                                </li>
-                                <li>
-                                    <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
-                                </li>
-                                <li>
-                                    <span class="handle"><i class="fas fa-arrows-alt"></i></span>
-                                </li>
-                            </ul>
-                            <div class="edit-form">
-                                <form method="POST" action="#">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="مستلزمات المنزل" required>
-                                                <label>عنوان القائمة:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="#####" required>
-                                                <label>الرابط:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="custom-save-btn" type="submit">
-                                                <i class="far fa-save"></i>
-                                                تعديل
-                                            </button>
-                                        </div>
+                <div class="ui-state-default">
+                    <p>الإلكترونيات</p>
+                    <ul>
+                        <li>
+                            <span class="edit-list-btn">
+                                <i class="fas fa-pencil-alt"></i>
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
+                        </li>
+                        <li>
+                            <span class="handle"><i class="fas fa-arrows-alt"></i></span>
+                        </li>
+                    </ul>
+                    <div class="edit-form">
+                        <form method="POST" action="#">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="الإلكترونيات" required>
+                                        <label>عنوان القائمة:<span class="required">*</span></label>
                                     </div>
-                                </form>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="#####" required>
+                                        <label>الرابط:<span class="required">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="custom-save-btn" type="submit">
+                                        <i class="far fa-save"></i>
+                                        تعديل
+                                    </button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
+                    </div>
+                </div>
 
-                        <div class="ui-state-default">
-                            <p>الجوالات</p>
-                            <ul>
-                                <li>
-                                    <span class="edit-list-btn">
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-times"></i>
-                                    </span>
-                                </li>
-                                <li>
-                                    <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
-                                </li>
-                                <li>
-                                    <span class="handle"><i class="fas fa-arrows-alt"></i></span>
-                                </li>
-                            </ul>
-                            <div class="edit-form">
-                                <form method="POST" action="#">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="الجوالات" required>
-                                                <label>عنوان القائمة:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="#####" required>
-                                                <label>الرابط:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="custom-save-btn" type="submit">
-                                                <i class="far fa-save"></i>
-                                                تعديل
-                                            </button>
-                                        </div>
+                <div class="ui-state-default">
+                    <p>مستلزمات المنزل</p>
+                    <ul>
+                        <li>
+                            <span class="edit-list-btn">
+                                <i class="fas fa-pencil-alt"></i>
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
+                        </li>
+                        <li>
+                            <span class="handle"><i class="fas fa-arrows-alt"></i></span>
+                        </li>
+                    </ul>
+                    <div class="edit-form">
+                        <form method="POST" action="#">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="مستلزمات المنزل" required>
+                                        <label>عنوان القائمة:<span class="required">*</span></label>
                                     </div>
-                                </form>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="#####" required>
+                                        <label>الرابط:<span class="required">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="custom-save-btn" type="submit">
+                                        <i class="far fa-save"></i>
+                                        تعديل
+                                    </button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
+                    </div>
+                </div>
 
-                        <div class="ui-state-default">
-                            <p>السوبر ماركت</p>
-                            <ul>
-                                <li>
-                                    <span class="edit-list-btn">
-                                        <i class="fas fa-pencil-alt"></i>
-                                        <i class="fas fa-times"></i>
-                                    </span>
-                                </li>
-                                <li>
-                                    <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
-                                </li>
-                                <li>
-                                    <span class="handle"><i class="fas fa-arrows-alt"></i></span>
-                                </li>
-                            </ul>
-                            <div class="edit-form">
-                                <form method="POST" action="#">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="السوبر ماركت" required>
-                                                <label>عنوان القائمة:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="input-group">
-                                                <input type="text" value="#####" required>
-                                                <label>الرابط:<span class="required">*</span></label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="custom-save-btn" type="submit">
-                                                <i class="far fa-save"></i>
-                                                تعديل
-                                            </button>
-                                        </div>
+                <div class="ui-state-default">
+                    <p>الجوالات</p>
+                    <ul>
+                        <li>
+                            <span class="edit-list-btn">
+                                <i class="fas fa-pencil-alt"></i>
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
+                        </li>
+                        <li>
+                            <span class="handle"><i class="fas fa-arrows-alt"></i></span>
+                        </li>
+                    </ul>
+                    <div class="edit-form">
+                        <form method="POST" action="#">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="الجوالات" required>
+                                        <label>عنوان القائمة:<span class="required">*</span></label>
                                     </div>
-                                </form>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="#####" required>
+                                        <label>الرابط:<span class="required">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="custom-save-btn" type="submit">
+                                        <i class="far fa-save"></i>
+                                        تعديل
+                                    </button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="ui-state-default">
+                    <p>السوبر ماركت</p>
+                    <ul>
+                        <li>
+                            <span class="edit-list-btn">
+                                <i class="fas fa-pencil-alt"></i>
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <a href="#" class="delete-list-btn"><i class="fas fa-trash-alt"></i></a>
+                        </li>
+                        <li>
+                            <span class="handle"><i class="fas fa-arrows-alt"></i></span>
+                        </li>
+                    </ul>
+                    <div class="edit-form">
+                        <form method="POST" action="#">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="السوبر ماركت" required>
+                                        <label>عنوان القائمة:<span class="required">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input type="text" value="#####" required>
+                                        <label>الرابط:<span class="required">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="custom-save-btn" type="submit">
+                                        <i class="far fa-save"></i>
+                                        تعديل
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <button class="custom-save-btn" type="submit">
+                <i class="far fa-save"></i>
+                حفظ
+            </button>
+        </form>
+
     </div>
     <!-- ./Page Body -->
 
