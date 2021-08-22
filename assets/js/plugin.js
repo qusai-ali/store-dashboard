@@ -426,6 +426,7 @@ $(document).ready(function(){
     $('.add-product-box .dropdown-box .sections-box ul').on('click',function(){
         if ( $(this).parent().data('value') == 'brands' )
         {
+            $('.add-product-box .dropdown-box .sections-list[data-value="sections"]').removeClass('open');
             if( selected_product_brands <= 3 )
             {
                 $(this).parent().siblings('.sections-list').toggleClass('open');
@@ -433,6 +434,7 @@ $(document).ready(function(){
         }
         else
         {
+            $('.add-product-box .dropdown-box .sections-list[data-value="brands"]').removeClass('open');
             if( selected_product_sections <= 3 )
             {
                 $(this).parent().siblings('.sections-list').toggleClass('open');
@@ -519,6 +521,9 @@ $(document).ready(function(){
             $(this).parents('.dropdown-box').find('p.note').addClass('disactive');
         }
     });
+    $('.add-product-box .dropdown-box .sections-list .close-btn').on('click',function(){
+        $(this).parent().removeClass('open');
+    });
     /* -- ./Chosse Product Sections & Product Brands -- */
 
     /* -- Show Product Offer Block -- */
@@ -532,6 +537,24 @@ $(document).ready(function(){
         }
     });
     /* -- ./Show Product Offer Block -- */
+
+    /* -- Add New Product -- */
+    $('.add-product-box .add-sub-product h3 span').on('click',function(){
+        $(this).parent().slideUp(500);
+        $(this).parents('.add-sub-product').find('.group').slideDown(500);
+        $(this).parents('.add-sub-product').addClass('open');
+    });
+    $('.add-product-box .add-sub-product .custom-save-btn').on('click',function(){
+        $(this).parents('.add-sub-product').children('h3').slideDown(500);
+        $(this).parents('.add-sub-product').find('.group').slideUp(500);
+        $(this).parents('.add-sub-product').removeClass('open');
+    });
+    $('.add-product-box .add-sub-product .close-btn').on('click',function(){
+        $(this).parents('.add-sub-product').children('h3').slideDown(500);
+        $(this).parents('.add-sub-product').find('.group').slideUp(500);
+        $(this).parents('.add-sub-product').removeClass('open');
+    });
+    /* -- ./Add New Product -- */
 
     /* ========= ./Add Product ========== */
 
