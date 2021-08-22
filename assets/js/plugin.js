@@ -657,7 +657,6 @@ $(document).ready(function(){
     });
     /* ========= ./Add Product Image =========== */
 
-<<<<<<< Updated upstream
     /* ---------- specification table ------------*/
     $('.add-new-specification').on('click',function(){
         var new_specification_row = `
@@ -758,7 +757,7 @@ $(document).ready(function(){
         $('.add-product-box .adding-group table.price-table tbody').append(new_price_row);
     });
     /* ========= ./price table ========== */
-=======
+
     /* --------- Product Image Popup --------------*/
     lightbox.option({
         'resizeDuration': 200,
@@ -767,7 +766,6 @@ $(document).ready(function(){
 
     /* ========= ./Product Image Popup =========== */
 
->>>>>>> Stashed changes
 
     /* -- Edit-Product Datatable --*/
     var datatable = $('#product-table').DataTable({
