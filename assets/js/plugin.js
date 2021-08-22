@@ -294,7 +294,10 @@ $(document).ready(function(){
         $parent.removeClass('this');
         $parent.toggleClass('open');
     });    
-    
+    $('.date-picker .calendar .close-calender').on('click', function(e){
+        var $parent = $(this).parents('.date-picker');
+        $parent.toggleClass('open');
+    });    
     $(".calendar").on("change",function(){
         var $me = $(this),
             $selected = $me.val(),
@@ -303,6 +306,20 @@ $(document).ready(function(){
         $parent.find('.result').children('input').val($selected);
     });    
     /* -- ./Calender -- */
+
+    /* -- Discount Type -- */
+    $('.add-product-box .radio-box li input[name="discount_option"]').on('click',function(){
+        $('.add-product-box .discount-number').slideDown(500);
+        var input_option_val = $(this).val();
+        if (input_option_val == 0) {
+            $('.discount-number .symbol.coin').hide();
+            $('.discount-number .symbol.precentage').show();
+        } else {
+            $('.discount-number .symbol.precentage').hide();
+            $('.discount-number .symbol.coin').show();
+        }
+    });
+    /* -- ./Discount Type -- */
 
     /* -- Add Tags & Keywords -- */
     function seoInputsVal() {
@@ -504,7 +521,20 @@ $(document).ready(function(){
     });
     /* -- ./Chosse Product Sections & Product Brands -- */
 
+    /* -- Show Product Offer Block -- */
+    $('.add-product-box .product-offers .inner-title .yes-no-btn input').on('click',function(){
+        if($(this).is(':checked')) {
+            $(this).parents('.product-offers').addClass('open');
+            $(this).parents('.product-offers').children('.show-offer').slideDown(500);
+        } else {
+            $(this).parents('.product-offers').removeClass('open');
+            $(this).parents('.product-offers').children('.show-offer').slideUp(500);
+        }
+    });
+    /* -- ./Show Product Offer Block -- */
+
     /* ========= ./Add Product ========== */
+
     /* -- change when select image --*/
     $('input[type="file"]').change(function () {
         var input = this;

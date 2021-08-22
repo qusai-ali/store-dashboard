@@ -1057,15 +1057,38 @@
                         <h5 class="inner-title"><i class="fas fa-percent"></i> خصم المنتج:</h5>
                         <div class="row">
 
-                            <div class="col-6 group">
+                            <div class="col-12 group custom-group">
+                                <label>تحديد نوع الخصم:</label>
+                                <ul class="radio-box">
+                                    <li>
+                                        <input type="radio" value="0" name="discount_option" required>
+                                        <div class="check-box">
+                                            <img src="assets/images/check.png" alt="">
+                                            <img src="assets/images/check-done.png" class="done" alt="">
+                                        </div>
+                                        <span>نسبة مئوية</span>
+                                    </li>
+                                    <li>
+                                        <input type="radio" value="1" name="discount_option" required>
+                                        <div class="check-box">
+                                            <img src="assets/images/check.png" alt="">
+                                            <img src="assets/images/check-done.png" class="done" alt="">
+                                        </div>
+                                        <span>نسبة ثابتة</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-12 group discount-number">
                                 <div class="input-group">
                                     <input type="number" min="1" max="100">
-                                    <span class="symbol">%</span>
+                                    <span class="symbol precentage">%</span>
+                                    <span class="symbol coin">د.ك</span>
                                     <label>نسبة الخصم:</label>
                                 </div>
                             </div>
 
-                            <div class="col-6 group custom-group">
+                            <div class="col-12 group custom-group">
                                 <label>تحديد انتهاء الخصم:</label>
                                 <ul class="radio-box">
                                     <li>
@@ -1102,7 +1125,7 @@
                                             <button type="button"><i class="fa fa-calendar"></i></button>
                                         </div>
                                         <div class="calendar">
-                                            <span class="close-calender">&times;</span>
+                                            <span class="close-calender"><span>&times;</span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -1120,7 +1143,7 @@
                                             <button type="button"><i class="fa fa-calendar"></i></button>
                                         </div>
                                         <div class="calendar">                                            
-                                            <span class="close-calender">&times;</span>
+                                            <span class="close-calender"><span>&times;</span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -1131,134 +1154,143 @@
                     <!-- ./Product Discounts -->
 
                     <!-- Product Offers -->
-                    <div class="white-box">
-                        <h5 class="inner-title"><i class="fas fa-cart-arrow-down"></i> عروض المنتج:</h5>
-                        <div class="row">
+                    <div class="white-box product-offers">
+                        <h5 class="inner-title">
+                            <i class="fas fa-cart-arrow-down"></i> عروض المنتج:
+                            <div class="yes-no-btn">
+                                <input type="checkbox" class="checkbox">
+                                <div class="knobs"></div>
+                                <div class="layer"></div>
+                            </div>
+                        </h5>
+                        <div class="show-offer">
+                            <div class="row">
 
-                            <div class="col-12 group">
-                                <div class="product-search-area">
-                                    <label>ابحث عن المنتجات المراد تطبيق العرض عليها مع هذا المنتج:</label>
-                                    <input type="text" class="search-product-input" placeholder="اكتب للبحث ...">
-                                    <ul class="product-list">
-                                        <li data-value="01">
-                                            <img src="assets/images/img-upload.png" class="img-fluid" alt="">
-                                            <span>منتج 1</span>
+                                <div class="col-12 group">
+                                    <div class="product-search-area">
+                                        <label>ابحث عن المنتجات المراد تطبيق العرض عليها مع هذا المنتج:</label>
+                                        <input type="text" class="search-product-input" placeholder="اكتب للبحث ...">
+                                        <ul class="product-list">
+                                            <li data-value="01">
+                                                <img src="assets/images/img-upload.png" class="img-fluid" alt="">
+                                                <span>منتج 1</span>
+                                            </li>
+                                            <li data-value="02">
+                                                <img src="assets/images/img-upload.png" class="img-fluid" alt="">
+                                                <span>منتج 2</span>
+                                            </li>
+                                            <li data-value="03">
+                                                <img src="assets/images/img-upload.png" class="img-fluid" alt="">
+                                                <span>منتج 3</span>
+                                            </li>
+                                            <li data-value="04">
+                                                <img src="assets/images/img-upload.png" class="img-fluid" alt="">
+                                                <span>منتج 4</span>
+                                            </li>
+                                            <li data-value="05">
+                                                <img src="assets/images/img-upload.png" class="img-fluid" alt="">
+                                                <span>منتج 5</span>
+                                            </li>
+                                            <li data-value="06">
+                                                <img src="assets/images/img-upload.png" class="img-fluid" alt="">
+                                                <span>منتج 6</span>
+                                            </li>
+                                            <li data-value="07">
+                                                <img src="assets/images/img-upload.png" class="img-fluid" alt="">
+                                                <span>منتج 7</span>
+                                            </li>
+                                            <li data-value="08">
+                                                <img src="assets/images/img-upload.png" class="img-fluid" alt="">
+                                                <span>منتج 8</span>
+                                            </li>
+                                            <li data-value="09">
+                                                <img src="assets/images/img-upload.png" class="img-fluid" alt="">
+                                                <span>منتج 9</span>
+                                            </li>
+                                            <li data-value="10">
+                                                <img src="assets/images/img-upload.png" class="img-fluid" alt="">
+                                                <span>منتج 10</span>
+                                            </li>
+                                            <li data-value="11">
+                                                <img src="assets/images/img-upload.png" class="img-fluid" alt="">
+                                                <span>منتج 11</span>
+                                            </li>
+                                            <li data-value="12">
+                                                <img src="assets/images/img-upload.png" class="img-fluid" alt="">
+                                                <span>منتج 12</span>
+                                            </li>
+                                            <li data-value="13">
+                                                <img src="assets/images/img-upload.png" class="img-fluid" alt="">
+                                                <span>منتج 13</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 product-block-list">
+                                    <h3>المنتجات المختارة:</h3>
+                                </div>
+
+                                <div class="col-12 group custom-group">
+                                    <label>تحديد انتهاء العرض:</label>
+                                    <ul class="radio-box">
+                                        <li>
+                                            <input type="radio" value="0" name="offer_type" data-value="offer" required>
+                                            <div class="check-box">
+                                                <img src="assets/images/check.png" alt="">
+                                                <img src="assets/images/check-done.png" class="done" alt="">
+                                            </div>
+                                            <span>حتى نفاذ الكمية</span>
                                         </li>
-                                        <li data-value="02">
-                                            <img src="assets/images/img-upload.png" class="img-fluid" alt="">
-                                            <span>منتج 2</span>
-                                        </li>
-                                        <li data-value="03">
-                                            <img src="assets/images/img-upload.png" class="img-fluid" alt="">
-                                            <span>منتج 3</span>
-                                        </li>
-                                        <li data-value="04">
-                                            <img src="assets/images/img-upload.png" class="img-fluid" alt="">
-                                            <span>منتج 4</span>
-                                        </li>
-                                        <li data-value="05">
-                                            <img src="assets/images/img-upload.png" class="img-fluid" alt="">
-                                            <span>منتج 5</span>
-                                        </li>
-                                        <li data-value="06">
-                                            <img src="assets/images/img-upload.png" class="img-fluid" alt="">
-                                            <span>منتج 6</span>
-                                        </li>
-                                        <li data-value="07">
-                                            <img src="assets/images/img-upload.png" class="img-fluid" alt="">
-                                            <span>منتج 7</span>
-                                        </li>
-                                        <li data-value="08">
-                                            <img src="assets/images/img-upload.png" class="img-fluid" alt="">
-                                            <span>منتج 8</span>
-                                        </li>
-                                        <li data-value="09">
-                                            <img src="assets/images/img-upload.png" class="img-fluid" alt="">
-                                            <span>منتج 9</span>
-                                        </li>
-                                        <li data-value="10">
-                                            <img src="assets/images/img-upload.png" class="img-fluid" alt="">
-                                            <span>منتج 10</span>
-                                        </li>
-                                        <li data-value="11">
-                                            <img src="assets/images/img-upload.png" class="img-fluid" alt="">
-                                            <span>منتج 11</span>
-                                        </li>
-                                        <li data-value="12">
-                                            <img src="assets/images/img-upload.png" class="img-fluid" alt="">
-                                            <span>منتج 12</span>
-                                        </li>
-                                        <li data-value="13">
-                                            <img src="assets/images/img-upload.png" class="img-fluid" alt="">
-                                            <span>منتج 13</span>
+                                        <li>
+                                            <input type="radio" value="1" name="offer_type" data-value="offer" required>
+                                            <div class="check-box">
+                                                <img src="assets/images/check.png" alt="">
+                                                <img src="assets/images/check-done.png" class="done" alt="">
+                                            </div>
+                                            <span>وفق مدة معينة</span>
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
 
-                            <div class="col-12 product-block-list">
-                                <h3>المنتجات المختارة:</h3>
-                            </div>
-
-                            <div class="col-12 group custom-group">
-                                <label>تحديد انتهاء العرض:</label>
-                                <ul class="radio-box">
-                                    <li>
-                                        <input type="radio" value="0" name="offer_type" data-value="offer" required>
-                                        <div class="check-box">
-                                            <img src="assets/images/check.png" alt="">
-                                            <img src="assets/images/check-done.png" class="done" alt="">
-                                        </div>
-                                        <span>حتى نفاذ الكمية</span>
-                                    </li>
-                                    <li>
-                                        <input type="radio" value="1" name="offer_type" data-value="offer" required>
-                                        <div class="check-box">
-                                            <img src="assets/images/check.png" alt="">
-                                            <img src="assets/images/check-done.png" class="done" alt="">
-                                        </div>
-                                        <span>وفق مدة معينة</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="col-6 group">
-                                <div class="date-group offer disabled">
-                                    <label>تاريخ بداية العرض:</label>
-                                    <div class="date-picker">
-                                        <div class="input">
-                                            <input type="hidden">
-                                            <div class="result">
-                                                <span></span>
+                                <div class="col-6 group">
+                                    <div class="date-group offer disabled">
+                                        <label>تاريخ بداية العرض:</label>
+                                        <div class="date-picker">
+                                            <div class="input">
                                                 <input type="hidden">
+                                                <div class="result">
+                                                    <span></span>
+                                                    <input type="hidden">
+                                                </div>
+                                                <button type="button"><i class="fa fa-calendar"></i></button>
                                             </div>
-                                            <button type="button"><i class="fa fa-calendar"></i></button>
-                                        </div>
-                                        <div class="calendar">
-                                            <span class="close-calender">&times;</span>
+                                            <div class="calendar">
+                                                <span class="close-calender"><span>&times;</span></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="col-6 group">
-                                <div class="date-group offer disabled">
-                                    <label>تاريخ نهاية العرض:</label>
-                                    <div class="date-picker">
-                                        <div class="input">
-                                            <div class="result">
-                                                <span></span>
-                                                <input type="hidden">
+                                <div class="col-6 group">
+                                    <div class="date-group offer disabled">
+                                        <label>تاريخ نهاية العرض:</label>
+                                        <div class="date-picker">
+                                            <div class="input">
+                                                <div class="result">
+                                                    <span></span>
+                                                    <input type="hidden">
+                                                </div>
+                                                <button type="button"><i class="fa fa-calendar"></i></button>
                                             </div>
-                                            <button type="button"><i class="fa fa-calendar"></i></button>
-                                        </div>
-                                        <div class="calendar">
-                                            <span class="close-calender">&times;</span>
+                                            <div class="calendar">
+                                                <span class="close-calender"><span>&times;</span></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
+                            </div>
                         </div>
                     </div>
                     <!-- ./Product Offers -->

@@ -1074,16 +1074,26 @@ textarea {
   opacity: 1;
   visibility: visible;
 }
-.date-picker.open .calendar .close-calender {
+.date-picker .calendar .close-calender {
   position: absolute;
-  left: -5px;
-  top: -5px;
-  width: 10px;
-  height: 10px;
-  background: #1592a5;
-  color: #fff;
+  z-index: 99;
+  right: 15px;
+  top: 13px;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  color: #444;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 23px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.date-picker .calendar .close-calender span {
+  position: relative;
+  top: -2px;
 }
 .date-picker .ui-datepicker-inline {
   position: relative;
@@ -1116,8 +1126,8 @@ textarea {
   margin: -44px 5px 0px 8px;
 }
 .date-picker .ui-datepicker-next {
-  float: right;
-  margin-right: 12px;
+  float: left;
+  margin-left: 12px;
 }
 .date-picker .ui-datepicker-next:after {
   transform: rotate(-135deg);
@@ -1287,6 +1297,13 @@ span.product_type {
   padding-bottom: 15px;
   border-bottom: 1px dashed #bfbfbf;
   color: var(--sub-menu-bg);
+}
+.custom-form .white-box h5.inner-title .yes-no-btn {
+  float: left;
+  margin-top: -5px;
+}
+.custom-form .white-box h5.inner-title .yes-no-btn .layer {
+  border: 1px solid #aaa;
 }
 .input-group {
   position: relative;
@@ -1834,6 +1851,28 @@ label .required {
 }
 .add-product-box .dropdown-box .sections-list li.selected {
   background: #17a2b8;
+}
+.add-product-box .discount-number {
+  display: none;
+}
+.add-product-box .product-offers h5.inner-title {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.add-product-box .product-offers.open h5.inner-title {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #bfbfbf;
+}
+.add-product-box .product-offers .show-offer {
+  display: none;
+  width: 100% !important;
 }
 
 /* ========= end_of # Add Product ========= */
