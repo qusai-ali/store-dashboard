@@ -803,8 +803,13 @@ $(document).ready(function(){
                 'orderable':false,
                 'className': 'dt-body-center',
                 'render': function (data, type, full, meta){
-                    return '<input type="checkbox" class="tablecheckbox" name="id[]" value="' 
-                    + $('<div/>').text(data).html() + '">';
+                    return `
+                    <div class="check-box">
+                        <input type="checkbox" class="tablecheckbox" name="id[]" value="` + $('<div/>').text(data).html() + `">
+                        <img src="assets/images/check.png" alt="">
+                        <img src="assets/images/check-done.png" class="done" alt="">
+                    </div>
+                    `;
                     }
             },
             {
@@ -827,16 +832,16 @@ $(document).ready(function(){
         <div class="price-filter-section">
             <span>حسب السعر :</span>
             <div>
-                <input type="text" class="filter-input price" id="min-price" placeholder="أدنى سعر">
-                <input type="text" class="filter-input price" id="max-price" placeholder="أعلى سعر">
+                <input type="number" min="1" class="filter-input price" id="min-price" placeholder="أدنى سعر">
+                <input type="number" min="1" class="filter-input price" id="max-price" placeholder="أعلى سعر">
             </div>
         </div>
 
         <div class="quantaty-filter-section">
             <span>حسب الكمية :</span>
             <div>
-                <input type="text" class="filter-input" id="min-quantity" placeholder="أقل كمية">
-                <input type="text" class="filter-input" id="max-quantity" placeholder="أكثر كمية">
+                <input type="number" min="1" class="filter-input" id="min-quantity" placeholder="أقل كمية">
+                <input type="number" min="1" class="filter-input" id="max-quantity" placeholder="أكثر كمية">
             </div>
         </div>
     `);
@@ -845,7 +850,7 @@ $(document).ready(function(){
         function( settings, data, dataIndex ) {
             var min_quantity = parseInt( $('#min-quantity').val(), 10 );
             var max_quantity = parseInt( $('#max-quantity').val(), 10 );
-            var quantity = parseFloat( data[5] ) || 0; 
+            var quantity = parseFloat( data[4] ) || 0; 
         
             if ( ( isNaN( min_quantity ) && isNaN( max_quantity ) ) ||
                     ( isNaN( min_quantity ) && quantity <= max_quantity ) ||
@@ -859,7 +864,7 @@ $(document).ready(function(){
     );
 
     $('#min-quantity,#max-quantity').keyup(function(){
-    datatable.draw();
+        datatable.draw();
     });
     
     $.fn.dataTable.ext.search.push(
