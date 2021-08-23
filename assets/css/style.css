@@ -2250,11 +2250,64 @@ label .required {
 /* ========= end_of # Add Product ========= */
 
 /* ========= Edit List ========= */
+ol.vertical {
+  margin: 0;
+  padding: 0;
+}
+
+ol.vertical li {
+  display: block;
+}
+
+ol.vertical li.placeholder {
+  position: relative;
+  margin: 0;
+  border: none;
+}
+
+ol.vertical li.placeholder:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  margin-top: -5px;
+  left: -5px;
+  top: -4px;
+  border: 5px solid transparent;
+  border-left-color: red;
+  border-right: none;
+}
+ol.nested_with_switch ol {
+  padding-right: 20px;
+}
+ol.nested_with_switch,
+ol.nested_with_switch ol {
+  border: 1px solid transparent;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+ol.nested_with_switch.active,
+ol.nested_with_switch ol.active {
+  border: 1px solid var(--sub-menu-bg);
+}
+
+ol.nested_with_switch li,
+ol.simple_with_animation li,
+ol.serialization li,
+ol.default li {
+  cursor: auto;
+}
+
 .edit-list {
   background: #f7f7f7;
   border: 1px solid #e1e1e1;
-  padding: 5px 0px;
+  padding: 5px;
 }
+
 .edit-list .ui-state-default {
   display: flex;
   flex-wrap: wrap;
@@ -2262,7 +2315,7 @@ label .required {
   position: relative;
   background: white;
   border: none;
-  margin: 10px;
+  margin: 3px;
   border: 1px solid #e1e1e1;
   -webkit-box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.05);
@@ -2270,8 +2323,9 @@ label .required {
   -o-box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.05);
   box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.05);
 }
+
 .edit-list .ui-state-default p {
-  flex: 0 0 calc(100% - 120px);
+  flex: 0 0 calc(100% - 132px);
   font-size: 14px;
   font-weight: 500;
   padding-left: 10px;
@@ -2281,29 +2335,34 @@ label .required {
   -o-user-select: none;
   user-select: none;
 }
-.edit-list .ui-state-default ul {
+
+.edit-list .ui-state-default .ul {
   flex: 0 0 120px;
   text-align: left;
   display: flex;
   align-items: center;
   justify-content: left;
 }
-.edit-list .ui-state-default ul li {
+
+.edit-list .ui-state-default .ul .li {
   flex: 1;
   padding-left: 10px;
 }
-.edit-list .ui-state-default ul li:last-child {
+
+.edit-list .ui-state-default .ul .li:last-child {
   border-right: 2px dashed #f2f2f2;
   padding-left: 0;
   padding-right: 10px;
 }
-.edit-list .ui-state-default ul li .handle {
+
+.edit-list .ui-state-default .ul .li .handle {
   color: #364352;
   padding: 5px;
   cursor: move;
 }
-.edit-list .ui-state-default ul li span,
-.edit-list .ui-state-default ul li a {
+
+.edit-list .ui-state-default .ul .li span,
+.edit-list .ui-state-default .ul .li a {
   width: 24px;
   height: 24px;
   display: flex;
@@ -2314,34 +2373,48 @@ label .required {
   color: #fff;
   cursor: pointer;
 }
+
 .edit-list .ui-state-default .edit-list-btn {
   background: #444;
 }
+
 .edit-list .ui-state-default a.delete-list-btn {
   background: #d00;
 }
+
 .edit-list .ui-state-default .edit-form {
   flex: 0 0 100%;
   border-top: 1px dashed transparent;
   margin-top: 15px;
   display: none;
 }
+
 .edit-list .ui-state-default svg.fa-times {
   display: none;
 }
+
 .edit-list .ui-state-default svg.fa-pencil-alt,
 .edit-list .ui-state-default.open svg.fa-times {
   display: block;
 }
+
 .edit-list .ui-state-default.open svg.fa-pencil-alt {
   display: none;
 }
+
 .edit-list .ui-state-default.open .edit-form {
   border-top: 1px dashed #e1e1e1;
 }
+
 .edit-list .ui-state-default .edit-form .custom-save-btn {
   margin-top: 10px;
   margin-bottom: 5px;
+}
+
+.sortable-placeholder {
+  box-shadow: inset 0px 0px 20px 10px #fff;
+  background-color: #bbb;
+  min-height: 5em;
 }
 /* ========= end_of # Edit List ========= */
 
