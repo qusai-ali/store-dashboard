@@ -2253,12 +2253,20 @@ label .required {
 ol.vertical {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 ol.vertical li {
   display: block;
 }
 
+.nested_li.dragged {
+  position: absolute;
+  opacity: 0.5;
+  right: 0;
+  box-shadow: 0px 0px 10px linen;
+  z-index: 6;
+}
 ol.vertical li.placeholder {
   position: relative;
   margin: 0;
@@ -2580,12 +2588,38 @@ ol.default li {
   color: white;
   border: 1px solid var(--sub-menu-bg);
   background-color: var(--sub-menu-bg);
-  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%, var(--sub-menu-bg)),color-stop(100%, var(--sub-menu-bg)));
-  background: -webkit-linear-gradient(top,var(--sub-menu-bg) 0%,var(--sub-menu-bg) 100%);
-  background: -moz-linear-gradient(top,var(--sub-menu-bg) 0%,var(--sub-menu-bg) 100%);
-  background: -ms-linear-gradient(top,var(--sub-menu-bg) 0%,var(--sub-menu-bg) 100%);
-  background: -o-linear-gradient(top,var(--sub-menu-bg) 0%,var(--sub-menu-bg) 100%);
-  background: linear-gradient(to bottom,var(--sub-menu-bg) 0%,var(--sub-menu-bg) 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, var(--sub-menu-bg)),
+    color-stop(100%, var(--sub-menu-bg))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    var(--sub-menu-bg) 0%,
+    var(--sub-menu-bg) 100%
+  );
+  background: -moz-linear-gradient(
+    top,
+    var(--sub-menu-bg) 0%,
+    var(--sub-menu-bg) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    var(--sub-menu-bg) 0%,
+    var(--sub-menu-bg) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    var(--sub-menu-bg) 0%,
+    var(--sub-menu-bg) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    var(--sub-menu-bg) 0%,
+    var(--sub-menu-bg) 100%
+  );
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button:focus-visible {
   outline: none;
@@ -2595,12 +2629,38 @@ ol.default li {
   color: white !important;
   border: 1px solid var(--sub-menu-bg);
   background-color: var(--sub-menu-bg);
-  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%, var(--sub-menu-bg)),color-stop(100%, var(--sub-menu-bg)));
-  background: -webkit-linear-gradient(top,var(--sub-menu-bg) 0%,var(--sub-menu-bg) 100%);
-  background: -moz-linear-gradient(top,var(--sub-menu-bg) 0%,var(--sub-menu-bg) 100%);
-  background: -ms-linear-gradient(top,var(--sub-menu-bg) 0%,var(--sub-menu-bg) 100%);
-  background: -o-linear-gradient(top,var(--sub-menu-bg) 0%,var(--sub-menu-bg) 100%);
-  background: linear-gradient(to bottom,var(--sub-menu-bg) 0%,var(--sub-menu-bg) 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, var(--sub-menu-bg)),
+    color-stop(100%, var(--sub-menu-bg))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    var(--sub-menu-bg) 0%,
+    var(--sub-menu-bg) 100%
+  );
+  background: -moz-linear-gradient(
+    top,
+    var(--sub-menu-bg) 0%,
+    var(--sub-menu-bg) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    var(--sub-menu-bg) 0%,
+    var(--sub-menu-bg) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    var(--sub-menu-bg) 0%,
+    var(--sub-menu-bg) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    var(--sub-menu-bg) 0%,
+    var(--sub-menu-bg) 100%
+  );
 }
 .dataTables_wrapper .dataTables_paginate .paginate_button {
   padding: 0.3em 0.7em;

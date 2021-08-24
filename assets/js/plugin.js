@@ -274,44 +274,47 @@ $(document).ready(function(){
       });
     /* -- ./Tinymce Text Editor --*/
 
-        /* ========= Edit List Page ========== */
-    
-        var oldContainer;
-        $("ol.nested_with_switch").sortable({
-            group: 'nested',
-            handle: '.handle',
-            container: '.edit-list',
-            afterMove: function (placeholder, container) {
-                if (oldContainer != container) {
-                    if (oldContainer)
-                        oldContainer.el.removeClass("active");
-                    container.el.addClass("active");
-    
-                    oldContainer = container;
-                }
-            },
-            onDrop: function ($item, container, _super) {
-                container.el.removeClass("active");
-                _super($item, container);
+    /* ========= Edit List Page ========== */
+
+    var oldContainer;
+    $("ol.nested_with_switch").sortable({
+        group: 'nested',
+        handle: '.handle',
+        distance: 0,
+        container: '.edit-list',
+        itemSelector: 'li',
+        placeholder: '<li class="placeholder"></li>',
+        afterMove: function (placeholder, container) {
+            if (oldContainer != container) {
+                if (oldContainer)
+                    oldContainer.el.removeClass("active");
+                container.el.addClass("active");
+
+                oldContainer = container;
             }
-        });
+        },
+        onDrop: function ($item, container, _super) {
+            container.el.removeClass("active");
+            _super($item, container);
+        }
+    });
+
+    $('.edit-list .ui-state-default .edit-list-btn').on('click',function(){
+        $(this).parents('.nested_li .ui-state-default').find('.edit-form').slideToggle(500);
+        $(this).parents('.nested_li .ui-state-default').toggleClass('open');
+        $(this).parents('.nested_li .ui-state-default').siblings().removeClass('open');
+        $(this).parents('.nested_li .ui-state-default').siblings().find('.edit-form').slideUp(500);
+    });
     
-        $('.edit-list .ui-state-default .edit-list-btn').on('click',function(){
-            $(this).parents('.nested_li .ui-state-default').find('.edit-form').slideToggle(500);
-            $(this).parents('.nested_li .ui-state-default').toggleClass('open');
-            $(this).parents('.nested_li .ui-state-default').siblings().removeClass('open');
-            $(this).parents('.nested_li .ui-state-default').siblings().find('.edit-form').slideUp(500);
+    $('.edit-list .ui-state-default ul li .handle').on('mouseenter',function(){
+        $('.edit-list .ui-state-default').each(function(){
+            $(this).removeClass('open');
         });
-        
-        $('.edit-list .ui-state-default ul li .handle').on('mouseenter',function(){
-            $('.edit-list .ui-state-default').each(function(){
-                $(this).removeClass('open');
-            });
-            $('.edit-list .ui-state-default .edit-form').each(function(){
-                $(this).slideUp(500);
-            });
+        $('.edit-list .ui-state-default .edit-form').each(function(){
+            $(this).slideUp(500);
         });
-        /* ========= ./Edit List Page ========== */
+    });
+    /* ========= ./Edit List Page ========== */
 
     /* -- Calender -- */
     $( ".calendar" ).datepicker({
