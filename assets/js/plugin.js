@@ -678,7 +678,7 @@ $(document).ready(function(){
     });
     /* ========= ./Add Product Image =========== */
 
-
+    /* ---------- specification table ------------*/
     $('.add-new-specification').on('click',function(){
         var new_specification_row = `
             <tr>
@@ -786,8 +786,6 @@ $(document).ready(function(){
     })
 
     /* ========= ./Product Image Popup =========== */
-
-
 
     /* -- Edit-Product Datatable --*/
     var datatable = $('#product-table').DataTable({
