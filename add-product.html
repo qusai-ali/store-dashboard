@@ -679,9 +679,10 @@
         <!-- ###### Add Product ###### -->
         <h3 class="main-section-title">
             إضافة منتج
+            <span class="product-type-title"></span>
         </h3>
         <div class="row">
-            <div class="group col-12">
+            <div class="group col-12 product-choose">
                 <label>حدد نوع المنتج:<span class="required">*</span></label>
                 <ul class="radio-box">
                     <li>
@@ -706,9 +707,7 @@
             </div>
         </div>
 
-        <form action="#" method="POST">
-
-
+        <form action="#" method="POST" class="add-product-form">
             <div class="custom-form add-product-box">
                 <div class="product-form-overlay"></div>
                 <div class="right-col">
@@ -896,8 +895,8 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                        <img src="assets/images/img-upload-white.png" class="img-fluid" alt="Img Placeholder"
-                                            data-target="7">
+                                        <img src="assets/images/img-upload-white.png" class="img-fluid"
+                                            alt="Img Placeholder" data-target="7">
                                     </div>
                                     <p class="note">مقاس الصورة: 1200 *1200</p>
                                 </div>
@@ -1988,7 +1987,7 @@
                     <!-- Cost Price -->
 
                     <!-- Allowed Countries To Shipping -->
-                    <div class="white-box">
+                    <div class="white-box allowed-countries">
                         <h5 class="inner-title"><i class="fas fa-ship"></i>الدول المسموح بشحن المنتج إليها:
                         </h5>
                         <div class="select-country-box">
@@ -2249,7 +2248,7 @@
                     <!-- ./Allowed Countries To Shipping -->
 
                     <!-- Shipping Cost -->
-                    <div class="white-box">
+                    <div class="white-box shipping-cost">
                         <h5 class="inner-title"><i class="fas fa-dollar-sign"></i> تكاليف الشحن:</h5>
                         <div class="input-group">
                             <input type="number" min="1">
@@ -2265,7 +2264,7 @@
                     <!-- Shipping Cost -->
 
                     <!-- Delivery Time -->
-                    <div class="white-box">
+                    <div class="white-box delivery-time">
                         <h5 class="inner-title"><i class="fas fa-clock"></i> وقت التوصيل:</h5>
                         <div class="deliver-time">
                             <label>التوصيل الداخلي:</label>
@@ -2386,7 +2385,6 @@
                 </div>
 
             </div>
-
 
             <button class="custom-save-btn not-select" type="submit">
                 <i class="far fa-save"></i>
@@ -2573,7 +2571,7 @@
     <script src="assets/js/tinymce/tinymce.min.js"></script>
     <script src="assets/plugins/data-tables/datatables.min.js"></script>
     <script src="assets/js/lightbox.js"></script>
-    
+
     <!-- Custom JS File -->
     <script src="assets/js/plugin.js"></script>
 

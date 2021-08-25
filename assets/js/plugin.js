@@ -402,17 +402,18 @@ $(document).ready(function(){
         if (input_type == 'product_type')
         {
             var product_form = $(this).data('name');
-            if (input_val == 0) {
-                $('.custom-form .product-form-overlay').removeClass('active');
-                $('span.product_type').text(product_form);
-                $('button.custom-save-btn').removeClass('not-select');
-
-            } else {
-                $('.custom-form .product-form-overlay').addClass('active');
-                $('span.product_type').text(product_form);
-                $('button.custom-save-btn').addClass('not-select');
-
+            $(this).parents('.product-choose').slideUp(800);
+            $('.product-type-title').text(product_form);
+            $('.custom-form .white-box').slideDown(800);
+            $('.custom-save-btn').delay(800).css("display","inline-block");
+            $('.add-product-box .save-btns').delay(800).css("display","flex");
+            if ( input_val == 1 )
+            {
+                $('.allowed-countries').delay(600).slideUp();
+                $('.shipping-cost').delay(300).slideUp();
+                $('.delivery-time').delay(100).slideUp();
             }
+
         } 
         else 
         {
@@ -614,6 +615,9 @@ $(document).ready(function(){
                     <div class="col-lg-2 col-md-2 col-sm-2 col-2">
                         <div class="img-containt">
                             <img src="`+e.target.result+`" class="img-fluid">
+                            <a href="`+e.target.result+`" class="view-img-btn" data-lightbox="roadtrip">
+                                <i class="fas fa-eye"></i>
+                            </a>
                             <a href="#" class="delete-img-btn">
                                 <i class="fas fa-trash-alt"></i>
                             </a>
@@ -673,6 +677,10 @@ $(document).ready(function(){
                 $('.overlay').toggleClass('active');
                 $('.photo-gallery').toggleClass('active');
                 $('.add-product-box .product-img-box .upload-file').find('img[data-target="'+target+'"]').attr('src',img);
+                $('.photo-gallery .photo-gallery-containt .img-containt').each(function() {
+                    $(this).removeClass('select');
+                });
+                $('.photo-gallery .photo-gallery-footer span.save-img-btn').addClass('disactive');
             }
         });
     });
@@ -767,7 +775,7 @@ $(document).ready(function(){
                         </ul>
                     </div>
                 </td>
-                <td> <input type="text" autocomplete="off"> </td>
+                <td> <input type="number" min="0" value="" autocomplete="off"> </td>
                 <td>
                     <a class="delete-price" title="حذف">
                         <i class="fas fa-trash-alt"></i>
