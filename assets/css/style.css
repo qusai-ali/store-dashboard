@@ -585,8 +585,11 @@ textarea {
   font-size: 25px;
 }
 .main-section-title .product-type-title {
-  color: #fdfdfd;
+  color: #d00;
   float: left;
+  font-size: 19px;
+  margin-top: 5px;
+  font-weight: 600;
 }
 .sub-main-title {
   margin-bottom: 25px;
@@ -1295,7 +1298,7 @@ textarea {
 
 /* -- ./Radio & Check Input Style -- */
 .product-choose {
-  text-align: center;
+  text-align: right;
 }
 .product-choose label {
   font-size: 25px;

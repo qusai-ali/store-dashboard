@@ -316,6 +316,43 @@ $(document).ready(function(){
     });
     /* ========= ./Edit List Page ========== */
 
+    /* ========= Edit Side List Page ========== */
+    $("ol.simple_with_animation").sortable({
+        group: 'simple_with_animation',
+        pullPlaceholder: false,
+        handle: '.handle',
+        onDrop: function  ($item, container, _super) {
+          var $clonedItem = $('<li/>').css({height: 0});
+          $item.before($clonedItem);
+          $clonedItem.animate({'height': $item.height()});
+      
+          $item.animate($clonedItem.position(), function  () {
+            $clonedItem.detach();
+            _super($item, container);
+          });
+        },
+      
+        // set $item relative to cursor position
+        onDragStart: function ($item, container, _super) {
+          var offset = $item.offset(),
+              pointer = container.rootGroup.pointer;
+      
+          adjustment = {
+            left: pointer.left - offset.left,
+            top: pointer.top - offset.top
+          };
+      
+          _super($item, container);
+        },
+        onDrag: function ($item, position) {
+          $item.css({
+            left: position.left - adjustment.left,
+            top: position.top - adjustment.top
+          });
+        }
+      });
+    /* ========= ./Edit Side List Page ========== */
+
     /* -- Calender -- */
     $( ".calendar" ).datepicker({
         monthNames: ['كانون الثاني', 'شباط', 'آذار', 'نيسان', 'أيار', 'حزيران', 'تموز', 'آب', 'أيلول', 'تشرين الأول', 'تشرين الثاني', 'كانون الأول'],
@@ -404,14 +441,14 @@ $(document).ready(function(){
             var product_form = $(this).data('name');
             $(this).parents('.product-choose').slideUp(800);
             $('.product-type-title').text(product_form);
-            $('.custom-form .white-box').slideDown(800);
+            $('.custom-form .white-box.slide').slideDown(800);
             $('.custom-save-btn').delay(800).css("display","inline-block");
             $('.add-product-box .save-btns').delay(800).css("display","flex");
-            if ( input_val == 1 )
+            if ( input_val == 0 )
             {
-                $('.allowed-countries').delay(600).slideUp();
-                $('.shipping-cost').delay(300).slideUp();
-                $('.delivery-time').delay(100).slideUp();
+                $('.allowed-countries').slideDown();
+                $('.shipping-cost').slideDown();
+                $('.delivery-time').slideDown();
             }
 
         } 
