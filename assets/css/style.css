@@ -67,10 +67,12 @@ body {
   left: 5%;
   z-index: -5;
   opacity: 0;
+  display: none;
   background-color: transparent;
   transition: all 0.3s ease-in-out;
 }
 .photo-gallery.active {
+  display: block;
   z-index: 9999992;
   opacity: 1;
 }
@@ -582,6 +584,13 @@ textarea {
   color: #fff;
   font-size: 25px;
 }
+.main-section-title .product-type-title {
+  color: #d00;
+  float: left;
+  font-size: 19px;
+  margin-top: 5px;
+  font-weight: 600;
+}
 .sub-main-title {
   margin-bottom: 25px;
   font-size: 18px;
@@ -913,7 +922,7 @@ textarea {
   border-radius: 5px;
   background: var(--main-menu-bg);
   color: #fff;
-  display: inline-block;
+  display: none;
   outline: none;
   border: 2px solid var(--main-menu-bg);
   transition: all 0.5s ease-in-out;
@@ -925,9 +934,6 @@ textarea {
 .custom-save-btn:hover {
   background: #fff;
   color: var(--main-menu-bg);
-}
-.custom-save-btn.not-select {
-  display: none;
 }
 /* -- ./Support Form -- */
 
@@ -1291,6 +1297,15 @@ textarea {
 }
 
 /* -- ./Radio & Check Input Style -- */
+.product-choose {
+  text-align: right;
+}
+.product-choose label {
+  font-size: 25px;
+}
+.product-choose ul li span {
+  font-size: 20px;
+}
 .custom-form {
   display: flex;
   flex-wrap: wrap;
@@ -1322,6 +1337,7 @@ textarea {
   background-color: rgba(255, 255, 255, 0.2);
 }
 .custom-form .white-box {
+  display: none;
   background: #f2f2f2;
   padding: 15px;
   border: 1px solid #e1e1e1;
@@ -1707,17 +1723,17 @@ label .required {
   background: #bbb;
 }
 .add-product-box
-.adding-group
+  .adding-group
   table
   tbody
   tr
   td
   .list-container
   .specifications-list {
-    margin-top: 0;
-  }
+  margin-top: 0;
+}
 .add-product-box
-.adding-group
+  .adding-group
   table
   tbody
   tr
@@ -1919,7 +1935,7 @@ label .required {
   color: #e5ad06;
 }
 .add-product-box .save-btns {
-  display: flex;
+  display: none;
   margin-bottom: 15px;
 }
 .add-product-box .save-btns li {
@@ -2281,11 +2297,12 @@ ol.vertical li {
 
 .nested_li.dragged {
   position: absolute;
-  opacity: 0.5;
+  opacity: 1;
   right: 0;
-  box-shadow: 0px 0px 10px linen;
+  top: 0;
   z-index: 6;
 }
+
 ol.vertical li.placeholder {
   position: relative;
   margin: 0;
@@ -2305,7 +2322,7 @@ ol.vertical li.placeholder:before {
   border-right: none;
 }
 ol.nested_with_switch ol {
-  padding-right: 20px;
+  padding-right: 60px;
 }
 ol.nested_with_switch,
 ol.nested_with_switch ol {
@@ -2333,6 +2350,7 @@ ol.default li {
   background: #f7f7f7;
   border: 1px solid #e1e1e1;
   padding: 5px;
+  overflow: hidden;
 }
 
 .edit-list .ui-state-default {
